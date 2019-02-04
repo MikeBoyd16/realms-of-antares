@@ -1,2 +1,2 @@
 # war-ccg
-A variation of the card game War
+A command-line role-playing game
