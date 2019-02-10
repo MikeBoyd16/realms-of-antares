@@ -1,0 +1,128 @@
+[
+    {
+        "id": "Praoria:Riverstar",
+        "name": "Riverstar",
+        "locations": {
+            "location:TownHall": {
+                "id": "Riverstar:TownHall",
+                "name": "Town Hall",
+                "locations": {},
+                "actions": {}
+            },
+            "location:JobBoard": {
+                "id": "Riverstar:JobBoard",
+                "name": "Job Board",
+                "locations": {},
+                "actions": {}
+            },
+            "location:Tavern": {
+                "id": "Riverstar:Tavern",
+                "name": "Twotails Tavern",
+                "locations": {},
+                "actions": {}
+            },
+            "location:GeneralStore": {
+                "id": "Riverstar:GeneralStore",
+                "name": "Baldric's Goods",
+                "locations": {},
+                "actions": {}
+            },
+            "location:Blacksmith": {
+                "id": "Riverstar:Blacksmith",
+                "name": "The Shimmering Blade",
+                "locations": {},
+                "actions": {}
+            },
+            "location:ResidentialDistrict": {
+                "id": "Riverstar:ResidentialDistrict",
+                "name": "Residential District",
+                "locations": {},
+                "actions": {}
+            },
+            "location:Travel": {
+                "id": "Riverstar:Travel",
+                "name": "Travel",
+                "locations": {},
+                "actions": {}
+            }
+        },
+        "actions": {
+            "action:GoToTownHall": {
+                "id": "GoToTownHall",
+                "name": "Town Hall",
+                "value": "Riverstar:TownHall"
+            },
+            "action:GoToJobBoard": {
+                "id": "GoToJobBoard",
+                "name": "Job Board",
+                "value": "Riverstar:JobBoard"
+            },
+            "action:GoToTavern": {
+                "id": "GoToTavern",
+                "name": "Twotails Tavern",
+                "value": "Riverstar:Tavern"
+            },
+            "action:GoToGeneralStore": {
+                "id": "GoToGeneralStore",
+                "name": "Baldric's Goods",
+                "value": "Riverstar:GeneralStore"
+            },
+            "action:GoToBlacksmith": {
+                "id": "GoToBlacksmith",
+                "name": "The Shimmering Blade",
+                "value": "Riverstar:Blacksmith"
+            },
+            "action:GoToResidentialDistrict": {
+                "id": "GoToResidentialDistrict",
+                "name": "Residential District",
+                "value": "Riverstar:ResidentialDistrict"
+            },
+            "action:GoToTravel": {
+                "id": "GoToTravel",
+                "name": "Travel",
+                "value": "Riverstar:Travel"
+            }
+        }
+    },
+    {
+        "id": "Praoria:HallowedHill",
+        "name": "Hallowed Hill",
+        "locations": {
+            "location:TheOverlook": {
+                "id": "HallowedHill:TheOverlook",
+                "name": "The Overlook",
+                "locations": {},
+                "actions": {}
+            },
+            "location:RiverstarCemetary": {
+                "id": "HallowedHill:RiverstarCemetary",
+                "name": "Riverstar Cemetary",
+                "locations": {},
+                "actions": {}
+            },
+            "location:Travel": {
+                "id": "HallowedHill:Travel",
+                "name": "Travel",
+                "locations": {},
+                "actions": {}
+            }
+        },
+        "actions": {
+            "action:GoToTheOverlook": {
+                "id": "GoToTheOverlook",
+                "name": "The Overlook",
+                "value": "HallowedHill:TheOverlook"
+            },
+            "action:GoToRiverstarCemetary": {
+                "id": "GoToRiverstarCemetary",
+                "name": "Riverstar Cemetary",
+                "value": "HallowedHill:RiverstarCemetary"
+            },
+            "action:GoToTravel": {
+                "id": "GoToTravel",
+                "name": "Travel",
+                "value": "HallowedHill:Travel"
+            }
+        }
+    }
+]
