@@ -5,8 +5,41 @@
         "locations": {
             "Riverstar:TownHall": {
                 "name": "Town Hall",
-                "locations": {},
-                "actions": {}
+                "locations": {
+                    "OfficeOfLicensing": {
+                        "name": "Office of Licensing",
+                        "locations": {},
+                        "actions": {}
+                    },
+                    "OfficeOfTaxation": {
+                        "name": "Office of Taxation",
+                        "locations": {},
+                        "actions": {}
+                    },
+                    "OfficeOfPolicy": {
+                        "name": "Office of Policy",
+                        "locations": {},
+                        "actions": {}
+                    }
+                },
+                "actions": {
+                    "GoToOfficeOfLicensing": {
+                        "name": "Office of Licensing",
+                        "value": "OfficeOfLicensing"
+                    },
+                    "GoToOfficeOfTaxation": {
+                        "name": "Office of Taxation",
+                        "value": "OfficeOfTaxation"
+                    },
+                    "GoToOfficeOfPolicy": {
+                        "name": "Office of Policy",
+                        "value": "OfficeOfPolicy"
+                    },
+                    "Leave": {
+                        "name": "Leave",
+                        "value": "Praoria:Riverstar"
+                    }
+                }
             },
             "Riverstar:JobBoard": {
                 "name": "Job Board",
@@ -36,7 +69,12 @@
             "Riverstar:Travel": {
                 "name": "Travel",
                 "locations": {},
-                "actions": {}
+                "actions": {
+                    "GoToHallowedHill": {
+                        "name": "Hallowed Hill",
+                        "value": "Praoria:HallowedHill"
+                    }
+                }
             }
         },
         "actions": {
@@ -87,7 +125,12 @@
             "HallowedHill:Travel": {
                 "name": "Travel",
                 "locations": {},
-                "actions": {}
+                "actions": {
+                    "GoToRiverstar": {
+                        "name": "Riverstar",
+                        "value": "Praoria:Riverstar"
+                    }
+                }
             }
         },
         "actions": {
