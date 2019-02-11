@@ -1,2 +1,2 @@
-# war-ccg
-A command-line role-playing game
+# stones-of-emberfall
+A react-based fantasy role-playing game.
