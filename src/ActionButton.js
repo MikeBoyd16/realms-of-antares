@@ -10,7 +10,7 @@ class ActionButton extends Component {
     render() {
         return(
             <div>
-                <button type='button' onClick={this.props.onActionClick}>{this.props.actionName}</button>
+                <button type='button' onClick={this.props.onClick}>{this.props.actionName}</button>
             </div>
         );
     }
