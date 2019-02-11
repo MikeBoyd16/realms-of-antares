@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
+import ActionButton from './ActionButton';
 import data from './data.json';
 
 const LocationActions = ({ currentLocation, onActionClick }) => (
     <div>
         {
-            Object.entries(currentLocation["actions"]).map(([key, value]) => <div><button type='button' onClick={() => onActionClick(value["value"])}>{value["name"]}</button></div>)
+            Object.entries(currentLocation["actions"]).map(([key, value]) => <ActionButton type='button' actionName={value["name"]} onActionClick={() => onActionClick(value["value"])} />)
         }
     </div>
 );
