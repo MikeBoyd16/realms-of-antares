@@ -1,151 +1,38 @@
-[
-    {
-        "id": "Praoria:Riverstar",
-        "name": "Riverstar",
-        "locations": {
-            "Riverstar:TownHall": {
-                "name": "Town Hall",
-                "locations": {
-                    "OfficeOfLicensing": {
-                        "name": "Office of Licensing",
-                        "locations": {},
-                        "actions": {}
-                    },
-                    "OfficeOfTaxation": {
-                        "name": "Office of Taxation",
-                        "locations": {},
-                        "actions": {}
-                    },
-                    "OfficeOfPolicy": {
-                        "name": "Office of Policy",
-                        "locations": {},
-                        "actions": {}
-                    }
-                },
-                "actions": {
-                    "GoToOfficeOfLicensing": {
-                        "name": "Office of Licensing",
-                        "value": "OfficeOfLicensing"
-                    },
-                    "GoToOfficeOfTaxation": {
-                        "name": "Office of Taxation",
-                        "value": "OfficeOfTaxation"
-                    },
-                    "GoToOfficeOfPolicy": {
-                        "name": "Office of Policy",
-                        "value": "OfficeOfPolicy"
-                    },
-                    "Leave": {
-                        "name": "Leave",
-                        "value": "Praoria:Riverstar"
-                    }
-                }
-            },
-            "Riverstar:JobBoard": {
-                "name": "Job Board",
-                "locations": {},
-                "actions": {}
-            },
-            "Riverstar:Tavern": {
-                "name": "Twotails Tavern",
-                "locations": {},
-                "actions": {}
-            },
-            "Riverstar:GeneralStore": {
-                "name": "Baldric's Goods",
-                "locations": {},
-                "actions": {}
-            },
-            "Riverstar:Blacksmith": {
-                "name": "The Shimmering Blade",
-                "locations": {},
-                "actions": {}
-            },
-            "Riverstar:ResidentialDistrict": {
-                "name": "Residential District",
-                "locations": {},
-                "actions": {}
-            },
-            "Riverstar:Travel": {
-                "name": "Travel",
-                "locations": {},
-                "actions": {
-                    "GoToHallowedHill": {
-                        "name": "Hallowed Hill",
-                        "value": "Praoria:HallowedHill"
-                    }
-                }
-            }
-        },
-        "actions": {
-            "GoToTownHall": {
-                "name": "Town Hall",
-                "value": "Riverstar:TownHall"
-            },
-            "GoToJobBoard": {
-                "name": "Job Board",
-                "value": "Riverstar:JobBoard"
-            },
-            "GoToTavern": {
-                "name": "Twotails Tavern",
-                "value": "Riverstar:Tavern"
-            },
-            "GoToGeneralStore": {
-                "name": "Baldric's Goods",
-                "value": "Riverstar:GeneralStore"
-            },
-            "GoToBlacksmith": {
-                "name": "The Shimmering Blade",
-                "value": "Riverstar:Blacksmith"
-            },
-            "GoToResidentialDistrict": {
-                "name": "Residential District",
-                "value": "Riverstar:ResidentialDistrict"
-            },
-            "GoToTravel": {
-                "name": "Travel",
-                "value": "Riverstar:Travel"
-            }
-        }
-    },
-    {
-        "id": "Praoria:HallowedHill",
-        "name": "Hallowed Hill",
-        "locations": {
-            "HallowedHill:TheOverlook": {
-                "name": "The Overlook",
-                "locations": {},
-                "actions": {}
-            },
-            "HallowedHill:RiverstarCemetary": {
-                "name": "Riverstar Cemetary",
-                "locations": {},
-                "actions": {}
-            },
-            "HallowedHill:Travel": {
-                "name": "Travel",
-                "locations": {},
-                "actions": {
-                    "GoToRiverstar": {
-                        "name": "Riverstar",
-                        "value": "Praoria:Riverstar"
-                    }
-                }
-            }
-        },
-        "actions": {
-            "GoToTheOverlook": {
-                "name": "The Overlook",
-                "value": "HallowedHill:TheOverlook"
-            },
-            "GoToRiverstarCemetary": {
-                "name": "Riverstar Cemetary",
-                "value": "HallowedHill:RiverstarCemetary"
-            },
-            "GoToTravel": {
-                "name": "Travel",
-                "value": "HallowedHill:Travel"
-            }
-        }
-    }
-]
+{
+    "Praoria": { "name": "Praoria" },
+    "Riverstar": { "name": "Riverstar", "actions": {
+        "GoToTownHall": { "name": "Town Hall", "value": "Riverstar:TownHall" },
+        "GoToJobBoard": { "name": "Job Board", "value": "Riverstar:JobBoard" },
+        "GoToTavern": { "name": "Twotails Tavern", "value": "Riverstar:Tavern" },
+        "GoToGeneralStore": { "name": "Baldric's Goods", "value": "Riverstar:GeneralStore" },
+        "GoToBlacksmith": { "name": "The Shimmering Blade", "value": "Riverstar:Blacksmith" },
+        "GoToResidentialDistrict": { "name": "Residential District", "value": "Riverstar:ResidentialDistrict" },
+        "GoToTravel": { "name": "Travel", "value": "Riverstar:Travel" }}},
+
+    "Riverstar:TownHall": { "name": "Town Hall", "actions": {
+        "GoToOfficeOfLicensing": { "name": "Office of Licensing", "value": "Riverstar:TownHall:OfficeOfLicensing" },
+        "GoToOfficeOfTaxation": { "name": "Office of Taxation", "value": "Riverstar:TownHall:OfficeOfTaxation" },
+        "GoToOfficeOfPolicy": { "name": "Office of Policy", "value": "Riverstar:TownHall:OfficeOfPolicy" },
+        "Leave": { "name": "Leave", "value": "Riverstar" }}},
+
+    "Riverstar:TownHall:OfficeOfLicensing": { "name": "Office of Licensing", "actions": {} },
+    "Riverstar:TownHall:OfficeOfTaxation": { "name": "Office of Taxation", "actions": {} },
+    "Riverstar:TownHall:OfficeOfPolicy": { "name": "Office of Policy", "actions": {} },
+    "Riverstar:JobBoard": { "name": "Job Board", "actions": {} },
+    "Riverstar:Tavern": { "name": "Twotails Tavern", "actions": {} },
+    "Riverstar:GeneralStore": { "name": "Baldric's Goods", "actions": {} },
+    "Riverstar:Blacksmith": { "name": "The Shimmering Blade", "actions": {} },
+    "Riverstar:ResidentialDistrict": { "name": "Residential District", "actions": {} },
+    "Riverstar:Travel": { "name": "Travel", "actions": {
+        "GoToHallowedHill": { "name": "Hallowed Hill", "value": "HallowedHill" }}},
+
+    "HallowedHill": { "name": "Hallowed Hill", "actions": {
+        "GoToTheOverlook": { "name": "The Overlook", "value": "HallowedHill:TheOverlook" },
+        "GoToRiverstarCemetary": { "name": "Riverstar Cemetary", "value": "HallowedHill:RiverstarCemetary" },
+        "GoToTravel": { "name": "Travel", "value": "HallowedHill:Travel" }}},
+
+    "HallowedHill:TheOverlook": { "name": "The Overlook", "actions": {} },
+    "HallowedHill:RiverstarCemetary": { "name": "Riverstar Cemetary", "actions": {} },
+    "HallowedHill:Travel": { "name": "Travel", "actions": {
+        "GoToRiverstar": { "name": "Riverstar", "value": "Riverstar" }}}
+}

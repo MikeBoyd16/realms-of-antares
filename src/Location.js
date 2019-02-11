@@ -1,14 +1,10 @@
 import React, { Component } from 'react';
+import data from './data.json';
 
-var locations = {
-    'Balmora': { 'Town Hall': 'Town Hall', 'General Goods': 'General Goods', 'Job Board': 'Job Board', 'Go To Vivec': 'Vivec' },
-    'Vivec': { 'Bank': 'Bank', 'Blacksmith': 'Blacksmith', 'Guild': 'Guild', 'Go To Balmora': 'Balmora' }
-}
-
-const LocationActions = ({ locations, currentLocation, onActionClick }) => (
+const LocationActions = ({ currentLocation, onActionClick }) => (
     <div>
         {
-            Object.entries(locations[currentLocation]).map(([key, value]) => <button type='button' onClick={() => onActionClick(value)}>{key}</button>)
+            Object.entries(currentLocation["actions"]).map(([key, value]) => <button type='button' onClick={() => onActionClick(value["value"])}>{value["name"]}</button>)
         }
     </div>
 );
@@ -17,16 +13,16 @@ class Location extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            name: this.props.name
+            currentLocation: data["Riverstar"]
         };
     }
-
-    handleClick = (e) => { this.setState({ name: e }) }
-
+    handleClick = (newLocation) => { 
+        this.setState({ currentLocation: data[newLocation] }) 
+    }
     render() {
         return(
             <div>
-                 <LocationActions locations={locations} currentLocation={this.state.name} onActionClick={this.handleClick} />
+                 <LocationActions currentLocation={this.state.currentLocation} onActionClick={this.handleClick} />
             </div>
         );
     }
