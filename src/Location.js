@@ -4,7 +4,7 @@ import data from './data.json';
 const LocationActions = ({ currentLocation, onActionClick }) => (
     <div>
         {
-            Object.entries(currentLocation["actions"]).map(([key, value]) => <button type='button' onClick={() => onActionClick(value["value"])}>{value["name"]}</button>)
+            Object.entries(currentLocation["actions"]).map(([key, value]) => <div><button type='button' onClick={() => onActionClick(value["value"])}>{value["name"]}</button></div>)
         }
     </div>
 );
