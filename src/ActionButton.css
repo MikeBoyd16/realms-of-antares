@@ -1,0 +1,67 @@
+@import url(https://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700);
+
+button {
+    font-family: 'Josefin Slab', serif;
+    text-decoration: none;
+    border: none;
+    position: relative;
+    width: 150px;
+    padding: 0;
+    font-size: 15px;
+    margin: 10px 20px 10px 0;
+    font-weight: 650;
+    text-align: center;
+    line-height: 50px;
+    color: #FFF;
+    border-radius: 5px;
+    transition: all 0.2s ;
+}
+
+.btnBlueGreen {
+  background: #00AE68;
+}
+
+.btnLightBlue {
+  background: #5DC8CD;
+}
+
+.btnOrange {
+  background: #FFAA40;
+}
+
+.btnPurple {
+  background: #A74982;
+}
+
+/* BORDER */
+.btnBlueGreen.btnBorder {
+  box-shadow: 0px 0px 0px 0px #21825B;
+}
+
+.btnBlueGreen.btnBorder:hover {
+  box-shadow: 0px 0px 0px 5px #21825B;
+}
+
+.btnLightBlue.btnBorder {
+  box-shadow: 0px 0px 0px 0px #01939A;
+}
+
+.btnLightBlue.btnBorder:hover {
+  box-shadow: 0px 0px 0px 3px #01939A;
+}
+
+.btnOrange.btnBorder {
+  box-shadow: 0px 0px 0px 0px #A66615;
+}
+
+.btnOrange.btnBorder:hover {
+  box-shadow: 0px 0px 0px 5px #A66615;
+}
+
+.btnPurple.btnBorder {
+  box-shadow: 0px 0px 0px 0px #6D184B;
+}
+
+.btnPurple.btnBorder:hover {
+  box-shadow: 0px 0px 0px 5px #6D184B;
+}

@@ -5,7 +5,7 @@
         "GoToJobBoard": { "name": "Job Board", "value": "Riverstar:JobBoard" },
         "GoToTavern": { "name": "Twotails Tavern", "value": "Riverstar:Tavern" },
         "GoToGeneralStore": { "name": "Baldric's Goods", "value": "Riverstar:GeneralStore" },
-        "GoToBlacksmith": { "name": "The Shimmering Blade", "value": "Riverstar:Blacksmith" },
+        "GoToBlacksmith": { "name": "Firehilt Furnace", "value": "Riverstar:Blacksmith" },
         "GoToResidentialDistrict": { "name": "Residential District", "value": "Riverstar:ResidentialDistrict" },
         "GoToTravel": { "name": "Travel", "value": "Riverstar:Travel" }}},
 
@@ -21,7 +21,7 @@
     "Riverstar:JobBoard": { "name": "Job Board", "actions": {} },
     "Riverstar:Tavern": { "name": "Twotails Tavern", "actions": {} },
     "Riverstar:GeneralStore": { "name": "Baldric's Goods", "actions": {} },
-    "Riverstar:Blacksmith": { "name": "The Shimmering Blade", "actions": {} },
+    "Riverstar:Blacksmith": { "name": "Firehilt Furnace", "actions": {} },
     "Riverstar:ResidentialDistrict": { "name": "Residential District", "actions": {} },
     "Riverstar:Travel": { "name": "Travel", "actions": {
         "GoToHallowedHill": { "name": "Hallowed Hill", "value": "HallowedHill" }}},
