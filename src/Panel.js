@@ -6,7 +6,7 @@ class Panel extends Component {
         super(props);
         this.state = {
             child: this.props.child,
-            color: this.state.color
+            color: this.props.color
         }
     }
     render() {
