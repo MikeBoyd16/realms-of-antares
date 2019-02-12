@@ -1,6 +1,6 @@
 .ActionBar {
-    border: 2px solid rgb(129, 198, 255);
     display: inline-block;
+    margin: 10px;
 }
 
 .Wrapper {

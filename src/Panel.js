@@ -5,13 +5,23 @@ class Panel extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            child: this.props.child
+            children: this.props.children
         }
+        this.addLine = this.addLine.bind(this);
+    }
+    addLine() {
+        return(
+            <div>
+                <hr className="line" />
+            </div>
+        );
     }
     render() {
         return(
             <div className="Panel">
-                {this.state.child}
+                {this.addLine()}
+                {this.state.children}
+                {this.addLine()}
             </div>
         );
     }

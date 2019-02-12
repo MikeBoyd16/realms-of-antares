@@ -7,8 +7,8 @@ class App extends Component {
   render() {
     return (
       <div className="Panel-wrapper">
-          <Panel child={<ActionBar />} />
-          <Panel child={<ActionBar />} />
+          <Panel children={[<ActionBar />, <ActionBar />]} lines="no" />
+          <Panel children={<ActionBar />} lines="yes" />
       </div>
     );
   }
