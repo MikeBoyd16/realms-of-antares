@@ -1,16 +1,17 @@
 import React, { Component } from 'react';
-// import './ActionButton.css';
+import './Panel.css';
 
 class Panel extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            child: this.props.child
+            child: this.props.child,
+            color: this.state.color
         }
     }
     render() {
         return(
-            <div>
+            <div className="Panel" id={this.state.color}>
                 {this.state.child}
             </div>
         );
