@@ -5,13 +5,12 @@ class Panel extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            child: this.props.child,
-            color: this.props.color
+            child: this.props.child
         }
     }
     render() {
         return(
-            <div className="Panel" id={this.state.color}>
+            <div className="Panel">
                 {this.state.child}
             </div>
         );

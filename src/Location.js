@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import ActionButton from './ActionButton';
+import './Location.css';
 import data from './data.json';
 
 class Location extends Component {
@@ -25,7 +26,7 @@ class Location extends Component {
     }
     render() {
         return(
-            <div>
+            <div className="Location">
                  {this.createActions()}
             </div>
         );

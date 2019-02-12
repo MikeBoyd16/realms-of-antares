@@ -1,0 +1,8 @@
+.ActionBar {
+    border: 2px solid rgb(129, 198, 255);
+    display: inline-block;
+}
+
+.Wrapper {
+    margin: 5px 15px 5px 15px;
+}

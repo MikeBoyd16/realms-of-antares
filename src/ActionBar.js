@@ -1,11 +1,14 @@
 import React, { Component } from 'react';
 import Location from './Location';
+import './ActionBar.css';
 
 class ActionBar extends Component {
     render() {
         return(
-            <div>
-                <Location />
+            <div className="ActionBar">
+                <div className="Wrapper">
+                    <Location />
+                </div>
             </div>
         );
     }
