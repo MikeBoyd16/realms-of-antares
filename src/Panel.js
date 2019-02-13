@@ -5,16 +5,16 @@ class Panel extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            children: this.props.children
+            children: this.props.children,
+            classes: this.props.classes
         }
         this.addLine = this.addLine.bind(this);
     }
     addLine() {
-        return(
-            <div>
-                <hr className="line" />
-            </div>
-        );
+        if(typeof(this.state.classes) != "undefined" && 
+            this.state.classes.includes("lines")){
+            return(<div><hr className="line" /></div>);
+        }
     }
     render() {
         return(
