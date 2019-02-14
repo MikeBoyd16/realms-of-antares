@@ -6,7 +6,6 @@
         "GoToTavern": { "name": "Twotails Tavern", "value": "Riverstar:Tavern" },
         "GoToGeneralStore": { "name": "Baldric's Goods", "value": "Riverstar:GeneralStore" },
         "GoToBlacksmith": { "name": "Firehilt Furnace", "value": "Riverstar:Blacksmith" },
-        "GoToResidentialDistrict": { "name": "Residential District", "value": "Riverstar:ResidentialDistrict" },
         "GoToTravel": { "name": "Travel", "value": "Riverstar:Travel" }}},
 
     "Riverstar:TownHall": { "name": "Town Hall", "actions": {
@@ -22,7 +21,6 @@
     "Riverstar:Tavern": { "name": "Twotails Tavern", "actions": {} },
     "Riverstar:GeneralStore": { "name": "Baldric's Goods", "actions": {} },
     "Riverstar:Blacksmith": { "name": "Firehilt Furnace", "actions": {} },
-    "Riverstar:ResidentialDistrict": { "name": "Residential District", "actions": {} },
     "Riverstar:Travel": { "name": "Travel", "actions": {
         "GoToHallowedHill": { "name": "Hallowed Hill", "value": "HallowedHill" }}},
 
