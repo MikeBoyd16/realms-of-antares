@@ -21,7 +21,6 @@ class App extends Component {
         <div className="Panel-wrapper">
             <Panel children={<TextFeed />} />
             <Panel children={<ActionBar location={this.state.location} />} classes="lines" />
-            console.log(this.state.location);
         </div>
       </GameWorldContext.Provider>
     );
