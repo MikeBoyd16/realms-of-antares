@@ -8,7 +8,24 @@ class ActionButton extends Component {
         this.state = {
             actionName: this.props.actionName,
             actionValue: this.props.actionValue,
-            actionMessage: this.props.actionMessage
+            actionMessage: this.props.actionMessage,
+            classes: this.props.classes
+        }
+        this.createButton = this.createButton.bind(this);
+    }
+    createButton(gameWorld, activityFeed, updateDisplay) {
+        if(this.state.classes.includes("disabled")) {
+            return(
+                <button className={this.state.classes} onClick={() => 
+                    updateDisplay({...gameWorld[this.state.actionValue]}, (activityFeed + this.state.actionMessage))} disabled>
+                    {this.state.actionName}</button>
+            );
+        } else {
+            return(
+                <button className={this.state.classes} onClick={() => 
+                    updateDisplay({...gameWorld[this.state.actionValue]}, (activityFeed + this.state.actionMessage))}>
+                    {this.state.actionName}</button>
+            );
         }
     }
     render() {
@@ -16,9 +33,7 @@ class ActionButton extends Component {
             <GameWorldContext.Consumer>
                 {({ gameWorld, activityFeed, updateDisplay }) => (
                     <div>
-                        <button className="button btnBorder btnLightBlue" onClick={() => 
-                            updateDisplay({...gameWorld[this.state.actionValue]}, (activityFeed + this.state.actionMessage))}>
-                            {this.state.actionName}</button>
+                        {this.createButton(gameWorld, activityFeed, updateDisplay)}
                     </div>
                 )}
             </GameWorldContext.Consumer>

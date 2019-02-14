@@ -19,7 +19,7 @@ class ActionBar extends Component {
                     <div>
                     {
                         Object.entries(location["actions"]).map(([key, value]) => 
-                        <ActionButton key={key} actionName={value["name"]} actionValue={value["value"]} actionMessage={value["message"]} />)
+                        <ActionButton key={key} actionName={value["name"]} actionValue={value["value"]} actionMessage={value["message"]} classes="button btnLightBlue"/>)
                     }
                     {this.createEmptyActions(Object.keys(location["actions"]).length)}
                     </div>
@@ -30,7 +30,7 @@ class ActionBar extends Component {
     createEmptyActions(numChildren) {
         var emptyActions = [];
         while(numChildren < 6) {
-            emptyActions.push(<ActionButton key={numChildren+1} actionName=" " actionValue="empty" actionMessage="empty" />);
+            emptyActions.push(<ActionButton key={numChildren+1} actionName=" " actionValue="empty" actionMessage="empty" classes="button disabled" />);
             numChildren += 1;
         }
         return(emptyActions);
