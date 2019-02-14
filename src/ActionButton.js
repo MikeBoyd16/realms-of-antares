@@ -7,15 +7,18 @@ class ActionButton extends Component {
         super(props);
         this.state = {
             actionName: this.props.actionName,
-            actionValue: this.props.actionValue
+            actionValue: this.props.actionValue,
+            actionMessage: this.props.actionMessage
         }
     }
     render() {
         return(
             <GameWorldContext.Consumer>
-                {({ gameWorld, changeLocation }) => (
+                {({ gameWorld, activityFeed, updateDisplay }) => (
                     <div>
-                        <button className="button btnBorder btnLightBlue" onClick={() => changeLocation({...gameWorld[this.state.actionValue]})}>{this.state.actionName}</button>
+                        <button className="button btnBorder btnLightBlue" onClick={() => 
+                            updateDisplay({...gameWorld[this.state.actionValue]}, (activityFeed + this.state.actionMessage))}>
+                            {this.state.actionName}</button>
                     </div>
                 )}
             </GameWorldContext.Consumer>

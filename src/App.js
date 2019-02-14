@@ -10,10 +10,21 @@ class App extends Component {
   changeLocation = location => {
     this.setState({ location });
   };
+  updateActivityFeed = (activityFeed) => {
+    this.setState({ activityFeed });
+  }
+  updateDisplay = (location, activityFeed) => {
+    this.changeLocation(location);
+    this.updateActivityFeed(activityFeed);
+  }
   state = {
     gameWorld: data,
     location: data["Riverstar"],
-    changeLocation: this.changeLocation
+    currentNotification: data["Riverstar"]["message"],
+    activityFeed: data["Riverstar"]["message"],
+    changeLocation: this.changeLocation,
+    updateActivityFeed: this.updateActivityfeed,
+    updateDisplay: this.updateDisplay
   };
   render() {
     return (

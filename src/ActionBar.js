@@ -13,7 +13,7 @@ class ActionBar extends Component {
                             <div>
                             {
                                 Object.entries(location["actions"]).map(([key, value]) => 
-                                <ActionButton key={key} actionName={value["name"]} actionValue={value["value"]} />)
+                                <ActionButton key={key} actionName={value["name"]} actionValue={value["value"]} actionMessage={value["message"]} />)
                             }
                             </div>
                         )}

@@ -4,5 +4,9 @@ import data from './data.json';
 export const GameWorldContext = React.createContext({
     gameWorld: data,
     location: data["Riverstar"],
-    changeLocation: () => {}
+    currentNotification: data["Riverstar"]["message"],
+    activityFeed: data["Riverstar"]["message"],
+    changeLocation: () => {},
+    updateActivityFeed: () => {},
+    updateDisplay: () => {}
 });
