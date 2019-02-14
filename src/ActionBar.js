@@ -1,27 +1,26 @@
 import React, { Component } from 'react';
 import ActionButton from './ActionButton';
 import './ActionBar.css';
-import data from './data.json';
+import { GameWorldContext } from './GameWorldContext';
 
 class ActionBar extends Component {
     constructor(props) {
         super(props);
-        this.state = {
-            currentLocation: data["Riverstar"]
-        };
+        this.state = {};
         this.createActions = this.createActions.bind(this);
-    }
-    handleAction = (newLocation) => { 
-        this.setState({ currentLocation: data[newLocation] }) 
     }
     createActions() {
         return(
-            <div>
-            {
-                Object.entries(this.state.currentLocation["actions"]).map(([key, value]) => 
-                <ActionButton actionName={value["name"]} onClick={() => this.handleAction(value["value"])} />)
-            }
-            </div>
+            <GameWorldContext.Consumer>
+                {({ location }) => (
+                    <div>
+                    {
+                        Object.entries(location["actions"]).map(([key, value]) => 
+                        <ActionButton key={key} actionName={value["name"]} actionValue={value["value"]} />)
+                    }
+                    </div>
+                )}
+            </GameWorldContext.Consumer>
         );
     }
     render() {

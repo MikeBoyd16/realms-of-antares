@@ -1,18 +1,24 @@
 import React, { Component } from 'react';
 import './ActionButton.css';
+import { GameWorldContext } from './GameWorldContext';
 
 class ActionButton extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            action: this.props.actionName
+            actionName: this.props.actionName,
+            actionValue: this.props.actionValue
         }
     }
     render() {
         return(
-            <div>
-                <button className="button btnBorder btnLightBlue" onClick={this.props.onClick}>{this.props.actionName}</button>
-            </div>
+            <GameWorldContext.Consumer>
+                {({ gameWorld, changeLocation }) => (
+                    <div>
+                        <button className="button btnBorder btnLightBlue" onClick={() => changeLocation({...gameWorld[this.state.actionValue]})}>{this.state.actionName}</button>
+                    </div>
+                )}
+            </GameWorldContext.Consumer>
         );
     }
 }
