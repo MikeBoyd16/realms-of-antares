@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import './App.css';
+import '../css/App.css';
 import Panel from './Panel';
 import ActionBar from './ActionBar';
 import TextFeed from './TextFeed';
-import {GameWorldContext} from './GameWorldContext';
-import data from './data.json';
+import {GameWorldContext} from '../GameWorldContext';
+import data from '../data.json';
 
 class App extends Component {
   changeLocation = location => {

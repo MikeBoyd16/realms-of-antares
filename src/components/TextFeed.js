@@ -1,8 +1,8 @@
 import React from "react";
 import OverlayScrollbars from "overlayscrollbars";
 import "overlayscrollbars/css/OverlayScrollbars.css";
-import { GameWorldContext } from './GameWorldContext';
-import './TextFeed.css';
+import { GameWorldContext } from '../GameWorldContext';
+import '../css/TextFeed.css';
 
 class TextFeed extends React.Component {
   constructor(props) {

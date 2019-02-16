@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import ActionButton from './ActionButton';
-import './ActionBar.css';
-import { GameWorldContext } from './GameWorldContext';
+import '../css/ActionBar.css';
+import { GameWorldContext } from '../GameWorldContext';
 
 class ActionBar extends Component {
     constructor(props) {

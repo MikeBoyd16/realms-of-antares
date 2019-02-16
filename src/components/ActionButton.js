@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import './ActionButton.css';
-import { GameWorldContext } from './GameWorldContext';
+import '../css/ActionButton.css';
+import { GameWorldContext } from '../GameWorldContext';
 
 class ActionButton extends Component {
     constructor(props) {
