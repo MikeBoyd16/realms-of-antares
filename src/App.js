@@ -30,8 +30,8 @@ class App extends Component {
     return (
       <GameWorldContext.Provider value={this.state}>
         <div className="Panel-wrapper">
-            <Panel children={<TextFeed />} classes="h-lines" />
-            <Panel children={<ActionBar location={this.state.location} />} classes="h-lines" />
+            <Panel children={<TextFeed options={{scrollbars: {visibility: "hidden"}}}/>} classes="feed" />
+            <Panel children={<ActionBar location={this.state.location} />} classes="actions" />
         </div>
       </GameWorldContext.Provider>
     );

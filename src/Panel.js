@@ -12,8 +12,11 @@ class Panel extends Component {
     }
     addLine() {
         if(typeof(this.state.classes) != "undefined" && 
-            this.state.classes.includes("h-lines")){
+            this.state.classes.includes("actions")){
             return(<div><hr className="h-line" /></div>);
+        }
+        if(this.state.classes.includes("feed")) {
+            return(<div><hr className="h-line" /></div>)
         }
     }
     render() {

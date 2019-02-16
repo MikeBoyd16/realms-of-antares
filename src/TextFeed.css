@@ -6,11 +6,11 @@
     font-size: 12px;
     color: #FFF;
     font-weight: 400;
-    width: 425px;
-    height: 385px;
+    width: 450px;
+    height: 391px;
     background: rgba(0, 163, 204, 0.1);
-    padding: 15px 40px 15px 40px;
+    padding: 15px 20px 5px 20px;
     text-align: left;
-    display: flex;
-    align-items: flex-end;
+    display: table-cell;
+    vertical-align: bottom;
 }
