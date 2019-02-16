@@ -22,9 +22,11 @@ class TextFeed extends React.Component {
     return (
       <GameWorldContext.Consumer>
         {({ activityFeed }) => (
-          <div {...this.props} ref={this.osTargetRef} className="TextFeed">
-            {this.props.children}
-            {activityFeed}
+          <div {...this.props} ref={this.osTargetRef} className="feedWrapper">
+            <div className="TextFeed">
+              {this.props.children}
+              {activityFeed}
+            </div>
           </div>
         )}
       </GameWorldContext.Consumer>
