@@ -25,7 +25,9 @@ class TextFeed extends React.Component {
           <div {...this.props} ref={this.osTargetRef} className="feedWrapper">
             <div className="TextFeed">
               {this.props.children}
-              {activityFeed}
+              {
+                activityFeed.map((notification) => <p>{notification}</p>)
+              }
             </div>
           </div>
         )}

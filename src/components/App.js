@@ -21,7 +21,8 @@ class App extends Component {
     gameWorld: data,
     location: data["Riverstar"],
     currentNotification: data["Riverstar"]["message"],
-    activityFeed: data["Riverstar"]["message"],
+    activityFeed: [data["Riverstar"]["message"]],
+    activityNotificationCount: 0,
     changeLocation: this.changeLocation,
     updateActivityFeed: this.updateActivityfeed,
     updateDisplay: this.updateDisplay

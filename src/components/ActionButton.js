@@ -16,14 +16,13 @@ class ActionButton extends Component {
     createButton(gameWorld, activityFeed, updateDisplay) {
         if(this.state.classes.includes("disabled")) {
             return(
-                <button className={this.state.classes} onClick={() => 
-                    updateDisplay({...gameWorld[this.state.actionValue]}, (activityFeed + this.state.actionMessage))} disabled>
-                    {this.state.actionName}</button>
+                <button className={this.state.classes} disabled></button>
             );
         } else {
+            activityFeed.push(this.state.actionMessage);
             return(
                 <button className={this.state.classes} onClick={() => 
-                    updateDisplay({...gameWorld[this.state.actionValue]}, (activityFeed + this.state.actionMessage))}>
+                    updateDisplay({...gameWorld[this.state.actionValue]}, activityFeed)}>
                     {this.state.actionName}</button>
             );
         }
