@@ -31,7 +31,7 @@ class ActivityFeed extends React.Component {
           <div {...this.props} ref={this.osTargetRef} id="activityFeed">
             <div id="notifications">
               {
-                activityFeed.map((notification) => <div className="notification">{notification}</div>)
+                activityFeed.map((notification, i) => <div key={i} className="notification">{notification}</div>)
               }
               {this.props.children}
             </div>

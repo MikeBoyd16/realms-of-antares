@@ -21,8 +21,9 @@ class App extends Component {
   updateActivityFeed = (activityFeed) => {
     this.setState({ activityFeed });
   }
-  updateDisplay = (location, activityFeed) => {
+  updateDisplay = (location, notification, activityFeed) => {
     this.changeLocation(location);
+    activityFeed.push(notification);
     this.updateActivityFeed(activityFeed);
     this.activityNotificationIncrement(this.activityNotificationCount);
   }

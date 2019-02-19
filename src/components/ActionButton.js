@@ -19,10 +19,9 @@ class ActionButton extends Component {
                 <button className={this.state.classes} disabled></button>
             );
         } else {
-            activityFeed.push(this.state.actionMessage);
             return(
                 <button className={this.state.classes} onClick={() => 
-                    updateDisplay({...gameWorld[this.state.actionValue]}, activityFeed)}>
+                    updateDisplay(gameWorld[this.state.actionValue], this.state.actionMessage, activityFeed)}>
                     {this.state.actionName}</button>
             );
         }
