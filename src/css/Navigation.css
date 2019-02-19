@@ -1,0 +1,11 @@
+#navigation {
+    background: lightGreen;
+    border: 3px solid green;
+    margin: 3px;
+    height: 15%;
+    width: 100%;
+}
+
+@media all and (min-width: 800px) {
+    #navigation         { order: 1 }
+}
