@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 // Import App component styles
-import '../css/Navigation.css';
+import '../appStyles.css';
 
 class Navigation extends Component {
     render() {

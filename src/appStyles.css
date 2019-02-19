@@ -1,0 +1,93 @@
+html, body {
+    width: 80%;
+    height: 92%;
+    text-align: center;
+    margin: 0 auto;
+    background-color: black;
+}
+
+#root, #components {
+    width: 100%;
+    height: 100%;
+}
+
+#components {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;  
+    
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    
+    font-weight: bold;
+    text-align: center;
+}
+
+#components > * {
+    padding: 10px;
+    flex: 1 100%;
+    background-color: rgb(33, 45, 56);
+    border: 2px solid rgb(204, 204, 204);
+    color: white;
+}
+  
+#navigation {
+    margin: 3px;
+    height: 15%;
+    width: 100%;
+}
+  
+#activityFeed {
+    margin: 3px; 
+    width: 60%;
+    height: 65%;
+    font-size: 14px;
+    text-align: left;
+    background: rgba(0, 163, 204, .4);
+    font-family: "Courier New", Courier, monospace;
+}
+
+.notification {
+    background-color: rgb(33, 45, 56);
+    border: 1px solid rgb(204, 204, 204);
+    padding: 5px;
+    margin: 10px 5px 10px 5px;
+}
+
+#characterStatus {
+    margin: 3px; 
+    max-width: 20%;
+    height: 65%;
+}
+  
+#actionBar {
+    margin: 3px; 
+    max-width: 20%;
+    height: 66.5%;
+    padding: 5px;
+    background-color: rgb(33, 45, 56);
+    border: 2px solid rgb(204, 204, 204);
+}
+
+#actions {
+    padding: 16px 11px 14px 11px;
+    border: 2px solid rgba(0, 163, 204, .9);
+}
+
+#dialogueBar {
+    margin: 3px; 
+    width: 100%;
+    height: 24%;
+}
+  
+@media all and (min-width: 800px) {
+    #activityFeed       { flex: 1 300px; }
+    #navigation         { order: 1 }
+    #characterStatus    { order: 2; } 
+    #activityFeed       { order: 3; }
+    #actionBar          { order: 4; }
+    #dialogueBar        { order: 5; }
+}
+  

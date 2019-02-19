@@ -8,7 +8,7 @@ import "overlayscrollbars/css/OverlayScrollbars.css";
 import { GameWorldContext } from '../GameWorldContext';
 
 // Import ActivityFeed component styles
-import '../css/ActivityFeed.css';
+import '../appStyles.css';
 
 class ActivityFeed extends React.Component {
   constructor(props) {
@@ -28,12 +28,12 @@ class ActivityFeed extends React.Component {
     return (
       <GameWorldContext.Consumer>
         {({ activityFeed }) => (
-          <div {...this.props} ref={this.osTargetRef} className="feedWrapper">
-            <div className="TextFeed">
-              {this.props.children}
+          <div {...this.props} ref={this.osTargetRef} id="activityFeed">
+            <div id="notifications">
               {
-                activityFeed.map((notification) => <div>{notification}</div>)
+                activityFeed.map((notification) => <div className="notification">{notification}</div>)
               }
+              {this.props.children}
             </div>
           </div>
         )}

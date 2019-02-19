@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import ActionButton from './ActionButton';
-import '../css/ActionBar.css';
+import '../appStyles.css';
 import { GameWorldContext } from '../GameWorldContext';
 
 class ActionBar extends Component {
@@ -16,7 +16,7 @@ class ActionBar extends Component {
         return(
             <GameWorldContext.Consumer>
                 {({ location }) => (
-                    <div>
+                    <div id="actions">
                     {
                         Object.entries(location["actions"]).map(([key, value]) => 
                         <ActionButton key={key} actionName={value["name"]} actionValue={value["value"]} actionMessage={value["message"]} classes="button btnLightBlue"/>)
@@ -37,10 +37,8 @@ class ActionBar extends Component {
     }
     render() {
         return(
-            <div className="ActionBar">
-                <div className="wrapper">
-                    {this.createActions()}
-                </div>
+            <div id="actionBar">
+                {this.createActions()}
             </div>
         );
     }

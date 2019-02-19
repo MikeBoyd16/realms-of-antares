@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 // Import components
 import Navigation from './Navigation';
 import CharacterStatus from './CharacterStatus';
-import ActivityFeed from './TextFeed';
+import ActivityFeed from './ActivityFeed';
 import ActionBar from './ActionBar';
 import DialogueBar from './DialogueBar';
 
@@ -12,7 +12,7 @@ import {GameWorldContext} from '../GameWorldContext';
 import data from '../data.json';
 
 // Import App component styles
-import '../css/App.css';
+import '../appStyles.css';
 
 class App extends Component {
   changeLocation = location => {
