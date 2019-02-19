@@ -1,0 +1,24 @@
+Navigation (component)
+- Activity (button)
+- Assets (button)
+- Logo (label/image)
+- Save Game (button)
+- Give Feedback (button)
+
+Character Status (component)
+- Name (label and state value)
+- Health (label and state value)
+- Action Points (label and state value)
+- CREDITS (label and state value)
+- Location (label and state value)
+- Time (label and state value)
+- Bounty (label and state value)
+
+Text Feed (Activity) (component)
+- Activity notifications (array of text)
+
+Action Bar (component)
+- Character actions based on location (dynamically generated buttons)
+
+Dialogue Bar (component)
+- Character dialogue options based on NPC (dynamically generated buttons)
