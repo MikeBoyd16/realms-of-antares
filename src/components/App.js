@@ -1,10 +1,18 @@
 import React, { Component } from 'react';
-import '../css/App.css';
-import Panel from './Panel';
+
+// Import components
+import Navigation from './Navigation';
+import CharacterStatus from './CharacterStatus';
+import ActivityFeed from './TextFeed';
 import ActionBar from './ActionBar';
-import TextFeed from './TextFeed';
+import DialogueBar from './DialogueBar';
+
+// Import game contect and data
 import {GameWorldContext} from '../GameWorldContext';
 import data from '../data.json';
+
+// Import App component styles
+import '../css/App.css';
 
 class App extends Component {
   changeLocation = location => {
@@ -34,9 +42,12 @@ class App extends Component {
   render() {
     return (
       <GameWorldContext.Provider value={this.state}>
-        <div className="Panel-wrapper">
-            <Panel children={<TextFeed options={{scrollbars: {visibility: "hidden"}}}/>} classes="feed" />
-            <Panel children={<ActionBar location={this.state.location} />} classes="actions" />
+        <div id="components">
+				  <Navigation />
+          <CharacterStatus />
+          <ActivityFeed options={{scrollbars: {visibility: "hidden"}}}/>
+          <ActionBar />
+          <DialogueBar />
         </div>
       </GameWorldContext.Provider>
     );

@@ -1,10 +1,16 @@
 import React from "react";
+
+// Import custom scrollbar library
 import OverlayScrollbars from "overlayscrollbars";
 import "overlayscrollbars/css/OverlayScrollbars.css";
-import { GameWorldContext } from '../GameWorldContext';
-import '../css/TextFeed.css';
 
-class TextFeed extends React.Component {
+// Import game context
+import { GameWorldContext } from '../GameWorldContext';
+
+// Import ActivityFeed component styles
+import '../css/ActivityFeed.css';
+
+class ActivityFeed extends React.Component {
   constructor(props) {
     super(props);
     this.osTargetRef = React.createRef();
@@ -36,4 +42,4 @@ class TextFeed extends React.Component {
   }
 }
 
-export default TextFeed;
+export default ActivityFeed;
