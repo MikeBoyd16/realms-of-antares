@@ -15,13 +15,10 @@ class Panel extends Component {
             this.state.classes.includes("actions")){
             return(<div><hr className="h-line" /></div>);
         }
-        if(this.state.classes.includes("feed")) {
-            return(<div><hr className="h-line" /></div>)
-        }
     }
     render() {
         return(
-            <div className="Panel">
+            <div className={this.state.classes.toString()}>
                 {this.addLine()}
                 {this.state.children}
                 {this.addLine()}

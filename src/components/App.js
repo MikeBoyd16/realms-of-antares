@@ -16,6 +16,10 @@ class App extends Component {
   updateDisplay = (location, activityFeed) => {
     this.changeLocation(location);
     this.updateActivityFeed(activityFeed);
+    this.activityNotificationIncrement(this.activityNotificationCount);
+  }
+  activityNotificationIncrement = (activityNotificationCount) => {
+    this.setState({ activityNotificationCount: activityNotificationCount + 1 })
   }
   state = {
     gameWorld: data,

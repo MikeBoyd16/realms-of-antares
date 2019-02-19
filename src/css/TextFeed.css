@@ -2,21 +2,22 @@
 
 .TextFeed {
     white-space: pre-line;
-    font-family: 'Orbitron', 'Open Sans', serif;
-    font-size: 12px;
+    white-space:pre;
+    font-family: "Courier New", 'Open Sans', serif;
+    font-size: 16px;
     color: #FFF;
     font-weight: 400;
-    background: rgba(0, 163, 204, 0.1);
     text-align: left;
-    display: table-cell;
-    vertical-align: bottom;
-    width: 450px;
-    height: 391px;
+    display: inline-block;
+    width: 570px;
+    height: 385px;
     padding: 15px 20px 5px 20px;
 }
 
 .feedWrapper {
-    width: 450px;
-    height: 410px;
+    width: 625px;
+    height: 507px;
     padding: 0;
+    margin: 0;
+    background: rgba(0, 163, 204, 0.1);
 }

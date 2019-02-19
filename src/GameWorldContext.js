@@ -9,5 +9,6 @@ export const GameWorldContext = React.createContext({
     activityNotificationCount: 0,
     changeLocation: () => {},
     updateActivityFeed: () => {},
-    updateDisplay: () => {}
+    updateDisplay: () => {},
+    activityNotificationIncrement: () => {}
 });

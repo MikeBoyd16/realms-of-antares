@@ -1,4 +1,16 @@
-.Panel {
+.feed {
+    text-align: center;
+    display: inline-block;
+    margin: 10px;
+    vertical-align: top;
+    background-color: rgb(33, 45, 56);
+    border: 2px solid rgb(204, 204, 204);
+    overflow: hidden;
+    width: 625px;
+    height: 507px;
+}
+
+.actions {
     text-align: center;
     display: inline-block;
     padding: 15px 30px 15px 30px;

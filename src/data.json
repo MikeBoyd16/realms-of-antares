@@ -1,7 +1,7 @@
 {
     "Praoria": { "name": "Praoria" },
-    "Riverstar": { "name": "Riverstar", "message": "You are now at Riverstar\n\n", "actions": {
-        "GoToTownHall": { "name": "Town Hall", "value": "Riverstar:TownHall", "message": "You are now at Town Hall\n\n" },
+    "Riverstar": { "name": "Riverstar", "message": "System:\tYou are now at Riverstar\n\n", "actions": {
+        "GoToTownHall": { "name": "Town Hall", "value": "Riverstar:TownHall", "message": "System:\tYou are now at Town Hall\n\n" },
         "GoToJobBoard": { "name": "Job Board", "value": "Riverstar:JobBoard" },
         "GoToTavern": { "name": "Twotails Tavern", "value": "Riverstar:Tavern" },
         "GoToGeneralStore": { "name": "Baldric's Goods", "value": "Riverstar:GeneralStore" },
@@ -12,7 +12,7 @@
         "GoToOfficeOfLicensing": { "name": "Office of Licensing", "value": "Riverstar:TownHall:OfficeOfLicensing" },
         "GoToOfficeOfTaxation": { "name": "Office of Taxation", "value": "Riverstar:TownHall:OfficeOfTaxation" },
         "GoToOfficeOfPolicy": { "name": "Office of Policy", "value": "Riverstar:TownHall:OfficeOfPolicy" },
-        "Leave": { "name": "Leave", "value": "Riverstar", "message": "You are now leaving Town Hall\n\n" }}},
+        "Leave": { "name": "Leave", "value": "Riverstar", "message": "System:\tYou are now leaving Town Hall\n\n" }}},
 
     "Riverstar:TownHall:OfficeOfLicensing": { "name": "Office of Licensing", "actions": {} },
     "Riverstar:TownHall:OfficeOfTaxation": { "name": "Office of Taxation", "actions": {} },
