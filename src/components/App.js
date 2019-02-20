@@ -46,7 +46,7 @@ class App extends Component {
         <div id="components">
 				  <Navigation />
           <CharacterStatus />
-          <ActivityFeed ref={this.state.osRef} />
+          <ActivityFeed/>
           <ActionBar />
           <DialogueBar />
         </div>

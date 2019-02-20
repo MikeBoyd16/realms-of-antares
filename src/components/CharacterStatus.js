@@ -7,7 +7,8 @@ class CharacterStatus extends Component {
     render() {
         return (
             <div id="characterStatus">
-                Character Status
+                <div id="fadePanel">
+                </div>
             </div>
         );
     }
