@@ -46,7 +46,7 @@ class App extends Component {
         <div id="components">
 				  <Navigation />
           <CharacterStatus />
-          <ActivityFeed options={{scrollbars: {visibility: "hidden"}}}/>
+          <ActivityFeed ref={this.state.osRef} />
           <ActionBar />
           <DialogueBar />
         </div>

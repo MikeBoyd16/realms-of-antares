@@ -1,9 +1,5 @@
 import React from "react";
 
-// Import custom scrollbar library
-import OverlayScrollbars from "overlayscrollbars";
-import "overlayscrollbars/css/OverlayScrollbars.css";
-
 // Import game context
 import { GameWorldContext } from '../GameWorldContext';
 
@@ -13,27 +9,30 @@ import '../appStyles.css';
 class ActivityFeed extends React.Component {
   constructor(props) {
     super(props);
-    this.osTargetRef = React.createRef();
+    this.messagesEnd = React.createRef();
+  }
+  scrollToBottom = () => {
+    this.messagesEnd.current.scrollIntoView({ behavior: "smooth" });
   }
 
   componentDidMount() {
-    this.osInstance = OverlayScrollbars(this.osTargetRef.current, this.props.options || {}, this.props.extensions);
+    this.scrollToBottom();
   }
 
-  componentWillUnmount() {
-    if (this.osInstance && this.osInstance.destroy) this.osInstance.destroy();
+  componentDidUpdate() {
+    this.scrollToBottom();
   }
 
   render() {
     return (
       <GameWorldContext.Consumer>
         {({ activityFeed }) => (
-          <div {...this.props} ref={this.osTargetRef} id="activityFeed">
+          <div id="activityFeed">
             <div id="notifications">
               {
                 activityFeed.map((notification, i) => <div key={i} className="notification">{notification}</div>)
               }
-              {this.props.children}
+              <div ref={this.messagesEnd}></div>
             </div>
           </div>
         )}
