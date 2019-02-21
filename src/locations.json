@@ -1,0 +1,237 @@
+{
+    "Praoria": 
+    { 
+        "name": "Praoria",
+        "message": "None",
+        "actions": "None"
+    },
+
+    "Riverstar": 
+    { 
+        "name": "Riverstar", 
+        "message": "You have arrived at Riverstar town center.", 
+        "actions": 
+        {
+            "GoToTownHall": 
+            { 
+                "type": "Location", 
+                "name": "Town Hall",
+                "message": "Travelling to the Riverstar town hall...",
+                "address": "Riverstar:TownHall" 
+            },
+            "GoToJobBoard": 
+            { 
+                "type": "Location", 
+                "name": "Job Board",
+                "message": "Travelling to the Riverstar job board...",
+                "address": "Riverstar:JobBoard"
+            },
+            "GoToTavern": 
+            { 
+                "type": "Location", 
+                "name": "Twotails Tavern",
+                "message": "Travelling to Twotails Tavern...",
+                "address": "Riverstar:Tavern" 
+            },
+            "GoToGeneralStore": 
+            { 
+                "type": "Location", 
+                "name": "Baldric's Goods",
+                "message": "Travelling to Baldric's Goods...",
+                "address": "Riverstar:GeneralStore" 
+            },
+            "GoToBlacksmith": 
+            { 
+                "type": "Location", 
+                "name": "Firehilt Furnace",
+                "message": "Travelling to Firehilt Furnace...",
+                "address": "Riverstar:Blacksmith" 
+            },
+            "GoToTravel": 
+            { 
+                "type": "Location", 
+                "name": "Travel",
+                "message": "None",
+                "address": "Riverstar:Travel" 
+            }
+        }
+    },
+
+    "Riverstar:TownHall": 
+    { 
+        "name": "Town Hall",
+        "message": "You have arrived at the Riverstar town hall.", 
+        "actions": 
+        {
+            "GoToOfficeOfLicensing": 
+            { 
+                "type": "Location", 
+                "name": "Office of Licensing",
+                "message": "Approaching the Office of Licensing...",
+                "address": "Riverstar:TownHall:OfficeOfLicensing" 
+            },
+            "GoToOfficeOfTaxation": 
+            { 
+                "type": "Location", 
+                "name": "Office of Taxation",
+                "message": "Approaching the Office of Taxation...",
+                "address": "Riverstar:TownHall:OfficeOfTaxation" 
+            },
+            "GoToOfficeOfPolicy": 
+            { 
+                "type": "Location", 
+                "name": "Office of Policy",
+                "message": "Approaching the Office of Policy...",
+                "address": "Riverstar:TownHall:OfficeOfPolicy" 
+            },
+            "Leave": 
+            { 
+                "type": "Location", 
+                "name": "Leave",
+                "message": "Leaving Riverstar town hall...",
+                "address": "Riverstar"
+            }
+        }
+    },
+
+    "Riverstar:TownHall:OfficeOfLicensing": 
+    { 
+        "name": "Office of Licensing", 
+        "message": "Opening the door, you walk through into the Office of Licensing.",
+        "actions": 
+        {
+            "TalkToClerk": 
+            { 
+                "type": "Dialogue", 
+                "name": "Talk to the clerk",
+                "message": "You approach the counter and motion for help from the clerk.",
+                "address": "Riverstar:TownHall:OfficeOfLicensing:TalkToClerk"
+            },
+            "Leave": 
+            { 
+                "type": "Location", 
+                "name": "Leave",
+                "message": "Leaving the Office of Licensing...",
+                "address": "Riverstar:TownHall"
+            }
+        }
+    },
+
+    "Riverstar:TownHall:OfficeOfTaxation": 
+    { 
+        "name": "Office of Taxation",
+        "message": "Opening the door, you walk through into the Office of Taxation.",
+        "actions": "None" 
+    },
+
+    "Riverstar:TownHall:OfficeOfPolicy": 
+    { 
+        "name": "Office of Policy",
+        "message": "Opening the door, you walk through into the Office of Policy.",
+        "actions": "None" 
+    },
+
+    "Riverstar:JobBoard": 
+    { 
+        "name": "Job Board", 
+        "message": "You have arrived at the Riverstar job board.",
+        "actions": "None" 
+    },
+
+    "Riverstar:Tavern": 
+    { 
+        "name": "Twotails Tavern",
+        "message": "You have arrived at Twotails Tavern.",
+        "actions": "None" 
+    },
+
+    "Riverstar:GeneralStore": 
+    { 
+        "name": "Baldric's Goods", 
+        "message": "You have arrived at Baldric's Goods.",
+        "actions": "None"
+    },
+
+    "Riverstar:Blacksmith": 
+    { 
+        "name": "Firehilt Furnace",
+        "message": "You have arrived at Firehilt Furnace.",
+        "actions": "None" 
+    },
+
+    "Riverstar:Travel": 
+    { 
+        "name": "Travel",
+        "message": "You open up your map, searching for your next destination.",
+        "actions": 
+        {
+            "GoToHallowedHill": 
+            { 
+                "type": "Location",
+                "name": "Hallowed Hill",
+                "message": "Travelling to Hallowed Hill...",
+                "address": "HallowedHill" 
+            }
+        }
+    },
+
+    "HallowedHill": 
+    { 
+        "name": "Hallowed Hill",
+        "message": "You have arrived at Hallowed Hill.",
+        "actions": 
+        {
+            "GoToTheOverlook": 
+            { 
+                "type": "Location", 
+                "name": "The Overlook", 
+                "message": "None",
+                "address": "HallowedHill:TheOverlook" 
+            },
+            "GoToRiverstarCemetary": 
+            { 
+                "type": "Location", 
+                "name": "Riverstar Cemetary",
+                "message": "None",
+                "address": "HallowedHill:RiverstarCemetary" 
+            },
+            "GoToTravel": 
+            { 
+                "type": "Location", 
+                "name": "Travel",
+                "message": "None",
+                "address": "HallowedHill:Travel" 
+            }
+        }
+    },
+
+    "HallowedHill:TheOverlook": 
+    { 
+        "name": "The Overlook",
+        "message": "You have approached The Overlook.",
+        "actions": "None"
+    },
+
+    "HallowedHill:RiverstarCemetary": 
+    { 
+        "name": "Riverstar Cemetary",
+        "message": "You have approached Riverstar Cemetary.",
+        "actions": "None" 
+    },
+
+    "HallowedHill:Travel": 
+    { 
+        "name": "Travel",
+        "message": "You open up your map, searching for your next destination.",
+        "actions": 
+        {
+            "GoToRiverstar": 
+            { 
+                "type": "Location", 
+                "name": "Riverstar", 
+                "message": "None",
+                "address": "Riverstar" 
+            }
+        }
+    }
+}

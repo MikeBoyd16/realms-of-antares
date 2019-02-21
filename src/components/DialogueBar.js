@@ -10,7 +10,7 @@ class DialogueBar extends Component {
     render() {
         return (
             <div id="dialogueBar">
-                Dialogue Bar.
+                Dialogue Bar
             </div>
         );
     }

@@ -7,20 +7,20 @@ class ActionButton extends Component {
         super(props);
         this.state = {
             actionName: this.props.actionName,
-            actionValue: this.props.actionValue,
             actionMessage: this.props.actionMessage,
+            actionAddress: this.props.actionAddress,
             classes: this.props.classes
         }
         this.createButton = this.createButton.bind(this);
     }
-    createButton(gameWorld, activityFeed, updateDisplay) {
+    createButton(gameWorldLocations, activityFeed, updateDisplay) {
         if(this.state.classes.includes("disabled")) {
             return(
                 <button className={this.state.classes} disabled></button>
             );
         } else {
             return(
-                <button className={this.state.classes} onClick={() => updateDisplay(gameWorld[this.state.actionValue], 
+                <button className={this.state.classes} onClick={() => updateDisplay(gameWorldLocations[this.state.actionAddress], 
                     this.state.actionMessage, activityFeed)}>{this.state.actionName}</button>
             );
         }
@@ -28,9 +28,9 @@ class ActionButton extends Component {
     render() {
         return(
             <GameWorldContext.Consumer>
-                {({ gameWorld, activityFeed, updateDisplay }) => (
+                {({ gameWorldLocations, activityFeed, updateDisplay }) => (
                     <div>
-                        {this.createButton(gameWorld, activityFeed, updateDisplay)}
+                        {this.createButton(gameWorldLocations, activityFeed, updateDisplay)}
                     </div>
                 )}
             </GameWorldContext.Consumer>

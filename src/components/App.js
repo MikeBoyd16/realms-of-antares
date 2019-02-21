@@ -9,7 +9,7 @@ import DialogueBar from './DialogueBar';
 
 // Import game contect and data
 import {GameWorldContext} from '../GameWorldContext';
-import data from '../data.json';
+import locations from '../locations.json';
 
 // Import App component styles
 import '../appStyles.css';
@@ -31,10 +31,10 @@ class App extends Component {
     this.setState({ activityNotificationCount: activityNotificationCount + 1 })
   }
   state = {
-    gameWorld: data,
-    location: data["Riverstar"],
-    currentNotification: data["Riverstar"]["message"],
-    activityFeed: [data["Riverstar"]["message"]],
+    gameWorldLocations: locations,
+    location: locations["Riverstar"],
+    currentNotification: locations["Riverstar"]["message"],
+    activityFeed: [locations["Riverstar"]["message"]],
     activityNotificationCount: 0,
     changeLocation: this.changeLocation,
     updateActivityFeed: this.updateActivityfeed,
