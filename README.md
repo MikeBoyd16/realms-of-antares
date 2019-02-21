@@ -1,2 +1,2 @@
-# stones-of-emberfall
-A react-based fantasy role-playing game.
+# realms-of-antares
+A text-based role-playing game
