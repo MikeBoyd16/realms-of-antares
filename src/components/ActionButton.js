@@ -20,9 +20,8 @@ class ActionButton extends Component {
             );
         } else {
             return(
-                <button className={this.state.classes} onClick={() => 
-                    updateDisplay(gameWorld[this.state.actionValue], this.state.actionMessage, activityFeed)}>
-                    {this.state.actionName}</button>
+                <button className={this.state.classes} onClick={() => updateDisplay(gameWorld[this.state.actionValue], 
+                    this.state.actionMessage, activityFeed)}>{this.state.actionName}</button>
             );
         }
     }
