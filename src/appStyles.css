@@ -100,6 +100,36 @@ html, body {
     width: 100%;
     height: 24%;
 }
+
+#dialogueButton {
+    font-family: 'Orbitron', 'Open Sans', serif;
+    text-decoration: none;
+    border: none;
+    position: relative;
+    width: 150px;
+    padding: 0;
+    font-size: 14px;
+    margin: 10px 0 10px 0;
+    font-weight: 500;
+    text-align: center;
+    line-height: 40px;
+    color: #FFF;
+    border-radius: 0px;
+    transition: all 0.4s;
+    display: inline-block;
+    height: 45px;
+    width: 155px;
+    background: rgba(0, 163, 204, .6);
+}
+
+#dialogueButton:hover {
+    background-color: rgb(38, 185, 253);
+}
+
+.dialogueButtonDisabled {
+    background: rgba(0, 163, 204, 0.1);
+    border: 1px solid black;
+  }
   
 @media all and (min-width: 800px) {
     #activityFeed       { flex: 1 300px; }
