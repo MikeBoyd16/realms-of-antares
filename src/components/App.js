@@ -17,26 +17,26 @@ import '../appStyles.css';
 class App extends Component {
   changeLocation = location => {
     this.setState({ location });
-  };
+  }
   updateActivityFeed = (activityFeed) => {
     this.setState({ activityFeed });
   }
-  updateDisplay = (location, notification, activityFeed) => {
+  updateDisplay = (location, actionMessage, arrivalMessage, activityFeed) => {
     this.changeLocation(location);
-    activityFeed.push(notification);
+    activityFeed.push(actionMessage);
     this.updateActivityFeed(activityFeed);
-    this.activityNotificationIncrement(this.activityNotificationCount);
-  }
-  activityNotificationIncrement = (activityNotificationCount) => {
-    this.setState({ activityNotificationCount: activityNotificationCount + 1 })
+    setTimeout(() => {
+      activityFeed.push(arrivalMessage);
+      this.setState({ activityFeed });
+    }, 3000);
   }
   state = {
     gameWorldLocations: locations,
     location: locations["Riverstar"],
     currentNotification: locations["Riverstar"]["message"],
     activityFeed: [locations["Riverstar"]["message"]],
-    activityNotificationCount: 0,
     changeLocation: this.changeLocation,
+    displayArrivalMessage: this.displayArrivalMessage,
     updateActivityFeed: this.updateActivityfeed,
     updateDisplay: this.updateDisplay
   };

@@ -15,11 +15,11 @@ class ActionBar extends Component {
     createActions() {
         return(
             <GameWorldContext.Consumer>
-                {({ location }) => (
+                {({ gameWorldLocations, location }) => (
                     <div id="actions">
                     {
                         Object.entries(location["actions"]).map(([key, value]) => 
-                        <ActionButton key={key} actionName={value["name"]} actionAddress={value["address"]} actionMessage={value["message"]} classes="button btnLightBlue"/>)
+                        <ActionButton key={key} actionName={value["name"]} actionAddress={value["address"]} actionMessage={value["message"]} arrivalMessage={gameWorldLocations[value["address"]]["message"]} classes="button btnLightBlue"/>)
                     }
                     {this.createEmptyActions(Object.keys(location["actions"]).length)}
                     </div>

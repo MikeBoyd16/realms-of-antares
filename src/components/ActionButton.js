@@ -9,6 +9,7 @@ class ActionButton extends Component {
             actionName: this.props.actionName,
             actionMessage: this.props.actionMessage,
             actionAddress: this.props.actionAddress,
+            arrivalMessage: this.props.arrivalMessage,
             classes: this.props.classes
         }
         this.createButton = this.createButton.bind(this);
@@ -21,7 +22,7 @@ class ActionButton extends Component {
         } else {
             return(
                 <button className={this.state.classes} onClick={() => updateDisplay(gameWorldLocations[this.state.actionAddress], 
-                    this.state.actionMessage, activityFeed)}>{this.state.actionName}</button>
+                    this.state.actionMessage, this.state.arrivalMessage, activityFeed)}>{this.state.actionName}</button>
             );
         }
     }

@@ -9,7 +9,7 @@
     "Riverstar": 
     { 
         "name": "Riverstar", 
-        "message": "You have arrived at Riverstar town center.", 
+        "message": "You have arrived at Riverstar's town center.", 
         "actions": 
         {
             "GoToTownHall": 
