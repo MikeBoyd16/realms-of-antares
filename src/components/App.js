@@ -21,10 +21,15 @@ class App extends Component {
   updateActivityFeed = (activityFeed) => {
     this.setState({ activityFeed });
   }
-  updateDisplay = (location, actionMessage, arrivalMessage, activityFeed) => {
+  manageDisplay = (location, actionMessage, arrivalMessage, activityFeed) => {
+    // Set the new location
     this.changeLocation(location);
+
+    // Display the action message
     activityFeed.push(actionMessage);
     this.updateActivityFeed(activityFeed);
+
+    // Display the arrival message after 3 seconds
     setTimeout(() => {
       activityFeed.push(arrivalMessage);
       this.setState({ activityFeed });
@@ -38,7 +43,7 @@ class App extends Component {
     changeLocation: this.changeLocation,
     displayArrivalMessage: this.displayArrivalMessage,
     updateActivityFeed: this.updateActivityfeed,
-    updateDisplay: this.updateDisplay
+    manageDisplay: this.manageDisplay
   };
   render() {
     return (

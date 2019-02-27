@@ -14,14 +14,14 @@ class ActionButton extends Component {
         }
         this.createButton = this.createButton.bind(this);
     }
-    createButton(gameWorldLocations, activityFeed, updateDisplay) {
+    createButton(gameWorldLocations, activityFeed, manageDisplay) {
         if(this.state.classes.includes("disabled")) {
             return(
                 <button className={this.state.classes} disabled></button>
             );
         } else {
             return(
-                <button className={this.state.classes} onClick={() => updateDisplay(gameWorldLocations[this.state.actionAddress], 
+                <button className={this.state.classes} onClick={() => manageDisplay(gameWorldLocations[this.state.actionAddress], 
                     this.state.actionMessage, this.state.arrivalMessage, activityFeed)}>{this.state.actionName}</button>
             );
         }
@@ -29,9 +29,9 @@ class ActionButton extends Component {
     render() {
         return(
             <GameWorldContext.Consumer>
-                {({ gameWorldLocations, activityFeed, updateDisplay }) => (
+                {({ gameWorldLocations, activityFeed, manageDisplay }) => (
                     <div>
-                        {this.createButton(gameWorldLocations, activityFeed, updateDisplay)}
+                        {this.createButton(gameWorldLocations, activityFeed, manageDisplay)}
                     </div>
                 )}
             </GameWorldContext.Consumer>

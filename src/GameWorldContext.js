@@ -5,9 +5,8 @@ export const GameWorldContext = React.createContext({
     gameWorldLocations: locations,
     location: locations["Riverstar"],
     activityFeed: [locations["Riverstar"]["message"]],
-    activityNotificationCount: 0,
     changeLocation: () => {},
     displayArrivalMessage: () => {},
     updateActivityFeed: () => {},
-    updateDisplay: () => {},
+    manageDisplay: () => {},
 });
