@@ -1,0 +1,45 @@
+{
+    "Name": "DefaultName",
+    "Class": "DefaultClass",
+    "Major Proficiency": "DefaultMajorProficiency",
+    "Minor Proficiency": "DefaultMinorProficiency",
+    "Level": 1,
+    "Status": {
+        "HP": 100,
+        "AP": 10
+    },
+    "Attributes": {
+        "Strength": 1,
+        "Constitution": 1,
+        "Dexterity": 1,
+        "Intelligence": 1,
+        "Wisdom": 1,
+        "Charisma": 1
+    },
+    "Skills": {
+        "Unarmed": 1,
+        "Handgun": 1,
+        "Rifle": 1,
+        "Navigation": 1,
+        "Hacking": 1,
+        "Engineering": 1,
+        "Barter": 1,
+        "Speechcraft": 1,
+        "Athletics": 1,
+        "Acrobatics": 1,
+        "History": 1,
+        "Government": 1
+    },
+    "Currencies": {
+        "CREDITS": 0
+    },
+    "Reputations": {
+        "Default": 0
+    },
+    "Social Standings": {
+        "Default": "DefaultSocialStanding"
+    },
+    "Bounties": {
+        "Default": "DefaultBounties"
+    }
+}
