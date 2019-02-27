@@ -9,7 +9,7 @@ import '../appStyles.css';
 class TitleMenu extends Component {
     render() {
         return(
-            <div>
+            <div id="titleMenu">
                 Title Menu
             </div>
         );
