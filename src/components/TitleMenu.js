@@ -10,7 +10,7 @@ class TitleMenu extends Component {
     render() {
         return(
             <div>
-
+                Title Menu
             </div>
         );
     }
