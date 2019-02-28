@@ -1,17 +1,21 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
 html, body {
-    width: 80%;
-    height: 92%;
+    width: 100%;
+    height: 100%;
     text-align: center;
     margin: 0 auto;
     background-color: rgb(31, 30, 30);
+    overflow: hidden;
 }
 
 #root, #components {
-    width: 100%;
-    height: 100%;
+    min-width: 100%;
+    min-height: 100%;
 }
 
 #components {
+    margin-top: 50px;
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
@@ -29,10 +33,11 @@ html, body {
     padding: 10px;
     flex: 1 100%;
     background-color: rgb(33, 45, 56);
-    border: 2px solid rgb(204, 204, 204);
-    color: white;
 }
 
+/* 
+ * TITLE MENU 
+ */
 #titleMenu {
     margin: 0 auto;
     margin-top: 100px;
@@ -77,12 +82,123 @@ html, body {
     box-shadow: inset 0 0 0 rgba(0,122,170,0.5), 0 0 1.5em rgba(0,122,170,0.7);
 }
 
+/*
+ * CHARACTER CREATION
+ */
+#characterCreation {
+    height: 100%;
+    width: 100%;
+    font-family: "Roboto";
+    letter-spacing: 0.30em;
+    font-size: 14px;
+    font-weight: normal;
+    text-align: center;
+    background-color: rgba(33, 45, 56, 0);
+    font-family: 'Orbitron', 'Open Sans', serif;
+}
+
+#namePanel, #classPanel, #proficiencyPanel {
+    margin-top: 200px;
+    transition: box-shadow .3s;
+    width: 300px;
+    height: 500px;
+    margin: 50px;
+    color: white;
+    box-shadow: inset 0 0 0.8em rgba(255,255,255,0.3), 0 0 0.8em rgba(255,255,255,0.3);
+    border: #fff solid 2px;
+    display: inline-block; 
+    vertical-align: top;
+    transition: all 1s;
+}
+
+#characterCreation > *:hover {
+    color: rgba(0,0,0,0.8);
+    background-color: #fff;
+    transition: 1.0s;
+    box-shadow: inset 0 0 0 rgba(255,255,255,0.3), 0 0 1.2em rgba(255,255,255,0.5);
+}
+
+#namePanel > input, label {
+    display: block;
+    margin: 0 auto;
+}
+
+#namePanel > label {
+    margin: 50px 0 150px 0;
+    font-size: 28px;
+}
+
+#namePanel > input {
+    width: 150px;
+    height: 30px;
+    text-align: center;
+    color: white;
+    background-color: rgb(31, 30, 30);
+    box-shadow: inset 0 0 0.8em rgba(255,255,255,0.3), 0 0 0.8em rgba(255,255,255,0.3);
+    border: #fff solid 2px;
+    font-family: 'Orbitron', 'Open Sans', serif;
+}
+
+#namePanel > input:hover {
+    background-color: rgb(31, 30, 30);
+    box-shadow: inset 0 0 0 rgba(31,30,30,0.5), 0 0 1.5em rgba(31,30,30,0.7);
+    border: black solid 2px;
+}
+
+#classPanel > label {
+    margin: 50px 0 10px 0;
+    font-size: 28px;
+}
+
+#classPanel > button {
+    margin: 25px 10px 10px 10px;
+    height: 55px;
+    width: 205px;
+    background-color: rgb(31, 30, 30);
+    box-shadow: inset 0 0 0.8em rgba(255,255,255,0.3), 0 0 0.8em rgba(255,255,255,0.3);
+    border: #fff solid 2px;
+    cursor: pointer;
+}
+
+#classPanel > button:hover {
+    background-color: rgb(31, 30, 30);
+    box-shadow: inset 0 0 0 rgba(31,30,30,0.5), 0 0 1.5em rgba(31,30,30,0.7);
+    border: black solid 2px;
+}
+
+#proficiencyPanel > label {
+    margin: 50px 0 25px 0;
+    font-size: 28px;
+}
+
+#proficiencyPanel > button {
+    margin: 10px 10px 5px 10px;
+    height: 45px;
+    width: 205px;
+    background-color: rgb(31, 30, 30);
+    box-shadow: inset 0 0 0.8em rgba(255,255,255,0.3), 0 0 0.8em rgba(255,255,255,0.3);
+    border: #fff solid 2px;
+    cursor: pointer;
+}
+
+#proficiencyPanel > button:hover {
+    background-color: rgb(31, 30, 30);
+    box-shadow: inset 0 0 0 rgba(31,30,30,0.5), 0 0 1.5em rgba(31,30,30,0.7);
+    border: black solid 2px;
+}
+
+/*
+ * NAVIGATION
+ */
 #navigation {
     margin: 3px;
     height: 15%;
     width: 100%;
 }
-  
+
+/*
+ * ACTIVITY FEED
+ */
 #activityFeed {
     margin: 3px; 
     width: 60%;
@@ -110,6 +226,9 @@ html, body {
     margin: 10px 5px 10px 5px;
 }
 
+/*
+ * CHARACTER STATUS
+ */
 #characterStatus {
     margin: 3px; 
     max-width: 20%;
@@ -125,6 +244,9 @@ html, body {
     background-color: rgba(255, 255, 255, .1);
 }
 
+/*
+ * ACTION BAR
+ */
 #actionBar {
     margin: 3px; 
     max-width: 20%;
@@ -139,6 +261,9 @@ html, body {
     border: 2px solid rgba(0, 163, 204, .9);
 }
 
+/*
+ * DIALOGUE BAR
+ */
 #dialogueBar {
     margin: 3px; 
     width: 100%;

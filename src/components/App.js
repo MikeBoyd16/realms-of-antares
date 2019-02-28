@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 // Import components
 import TitleMenu from './TitleMenu';
+import CharacterCreation from './CharacterCreation';
 import Navigation from './Navigation';
 import CharacterStatus from './CharacterStatus';
 import ActivityFeed from './ActivityFeed';
@@ -50,7 +51,7 @@ class App extends Component {
     return (
       <GameWorldContext.Provider value={this.state}>
         <div id="components">
-				  <TitleMenu />
+				  <CharacterCreation />
         </div>
       </GameWorldContext.Provider>
     );
