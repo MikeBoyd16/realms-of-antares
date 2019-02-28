@@ -99,6 +99,8 @@ html, body {
     font-family: 'Orbitron', 'Open Sans', serif;
 }
 
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
 #namePanel, #classPanel, #proficiencyPanel {
     margin-top: 200px;
     transition: box-shadow .3s;
@@ -111,6 +113,19 @@ html, body {
     display: inline-block; 
     vertical-align: top;
     transition: all 1s;
+
+    opacity:0;
+    -webkit-animation:fadeIn ease-in 1;
+    -moz-animation:fadeIn ease-in 1;
+    animation:fadeIn ease-in 1;
+  
+    -webkit-animation-fill-mode:forwards;
+    -moz-animation-fill-mode:forwards;
+    animation-fill-mode:forwards;
+  
+    -webkit-animation-duration:1s;
+    -moz-animation-duration:1s;
+    animation-duration:1s;
 }
 
 #characterCreation > *:hover {
@@ -118,6 +133,12 @@ html, body {
     background-color: #fff;
     transition: 1.0s;
     box-shadow: inset 0 0 0 rgba(255,255,255,0.3), 0 0 1.2em rgba(255,255,255,0.5);
+}
+
+#namePanel {
+    -webkit-animation-delay: 0.7s;
+    -moz-animation-delay: 0.7s;
+    animation-delay: 0.7s;
 }
 
 #namePanel > input, label {
@@ -147,6 +168,12 @@ html, body {
     border: black solid 2px;
 }
 
+#classPanel {
+    -webkit-animation-delay: 1.2s;
+    -moz-animation-delay:1.2s;
+    animation-delay: 1.2s;
+}
+
 #classPanel > label {
     margin: 50px 0 10px 0;
     font-size: 28px;
@@ -166,6 +193,12 @@ html, body {
     background-color: rgb(31, 30, 30);
     box-shadow: inset 0 0 0 rgba(31,30,30,0.5), 0 0 1.5em rgba(31,30,30,0.7);
     border: black solid 2px;
+}
+
+#proficiencyPanel {
+    -webkit-animation-delay: 1.6s;
+    -moz-animation-delay: 1.6s;
+    animation-delay: 1.6s;
 }
 
 #proficiencyPanel > label {

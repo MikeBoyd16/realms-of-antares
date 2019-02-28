@@ -17,6 +17,9 @@ import locations from '../locations.json';
 import '../appStyles.css';
 
 class App extends Component {
+  changeScreen = (screen) => {
+    this.setState({ screen });
+  }
   changeLocation = location => {
     this.setState({ location });
   }
@@ -37,21 +40,37 @@ class App extends Component {
       this.setState({ activityFeed });
     }, 3000);
   }
+  updateScreen = () => {
+    if(this.state.screen === "TitleMenu") {
+      return(<TitleMenu />);
+    } else if(this.state.screen === "CharacterCreation") {
+      return(<CharacterCreation />);
+    }
+  }
   state = {
     gameWorldLocations: locations,
     location: locations["Riverstar"],
     currentNotification: locations["Riverstar"]["message"],
     activityFeed: [locations["Riverstar"]["message"]],
+    changeScreen: this.changeScreen,
+    updateScreen: this.updateScreen,
     changeLocation: this.changeLocation,
     displayArrivalMessage: this.displayArrivalMessage,
     updateActivityFeed: this.updateActivityfeed,
-    manageDisplay: this.manageDisplay
+    manageDisplay: this.manageDisplay,
+    screen: "TitleMenu"
   };
+  componentDidUpdate(prevState) {
+    if(prevState.screen !== this.state.screen) {
+
+    }
+  }
+  
   render() {
     return (
       <GameWorldContext.Provider value={this.state}>
         <div id="components">
-				  <TitleMenu />
+				  {this.updateScreen()}
         </div>
       </GameWorldContext.Provider>
     );
