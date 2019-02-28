@@ -51,13 +51,15 @@ html, body {
 #titlePanel {
     margin: 0 auto;
     height: 65%;
-    width: 45%;
+    width: 29%;
     box-shadow: inset 0 0 0.8em rgba(255,255,255,0.3), 0 0 0.8em rgba(255,255,255,0.3);
     border: #fff solid 2px;
     background:  rgba(63, 63, 63, 0.1);
 }
+
 #titlePanel > img {
-    margin-top: 100px;
+    margin-top: 80px;
+    margin-bottom: 80px;
     height: 168px;
     width: 300px;
 }
@@ -68,7 +70,7 @@ html, body {
 }
 
 #actionPanel > button {
-    margin: 25px 10px 10px 10px;
+    margin: 50px 10px 10px 10px;
     height: 55px;
     width: 205px;
     background: rgba(0, 95, 204, 0.1);

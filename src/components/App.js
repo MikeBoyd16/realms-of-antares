@@ -51,7 +51,7 @@ class App extends Component {
     return (
       <GameWorldContext.Provider value={this.state}>
         <div id="components">
-				  <CharacterCreation />
+				  <TitleMenu />
         </div>
       </GameWorldContext.Provider>
     );
