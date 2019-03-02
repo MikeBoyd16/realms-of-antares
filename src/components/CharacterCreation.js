@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import '../appStyles.css';
+import '../css/CharacterCreation.css';
 
 class CharacterCreation extends Component {
     constructor(props) {
