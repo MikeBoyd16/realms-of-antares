@@ -1,35 +1,49 @@
 import React, { Component } from 'react';
-
-// Import game context
-import { GameWorldContext } from '../GameWorldContext';
-
-// Import component styles
 import '../appStyles.css';
 
 class CharacterCreation extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            buttonTypes: {
+                playerClasses: {
+                    labelName: "Class",
+                    buttonNames: ["Soldier", "Engineer", "Merchant", "Diplomat"]
+                },
+                playerProficiencies: {
+                    labelName: "Proficiency",
+                    buttonNames:  ["Navigation", "Barter", "Hacking", "Unarmed", "Athletics", "History"]
+                }
+            },
+            classSelected: " ",
+            proficiencySelected: " "
+        }
+        this.createButtons = this.createButtons.bind(this);
+        this.handleButtonSelect = this.handleButtonSelect.bind(this);
+    }
+    createButtons = (buttonType) => {
+        return(
+            <div id={buttonType}>
+                <label>{this.state.buttonTypes[buttonType]["labelName"]}</label>
+                {
+                    this.state.buttonTypes[buttonType]["buttonNames"].map((name, idx) => 
+                    <button key={idx} id={name} onClick={this.handleButtonSelect}>{name}</button>)
+                }
+            </div>
+        );
+    }
+    handleButtonSelect = (event) => {
+
+    }
     render() {
         return(
             <div id="characterCreation">
-                <div id="namePanel">
+                <div id="playerName">
                     <label>Name</label>
                     <input></input>
                 </div>
-                <div id="classPanel">
-                    <label>Class</label>
-                    <button>Soldier</button>
-                    <button>Engineer</button>
-                    <button>Merchant</button>
-                    <button>Diplomat</button>
-                </div>
-                <div id="proficiencyPanel">
-                    <label>Proficiency</label>
-                    <button>Navigation</button>
-                    <button>Barter</button>
-                    <button>Hacking</button>
-                    <button>Unarmed</button>
-                    <button>Althetics</button>
-                    <button>History</button>
-                </div>
+                {this.createButtons("playerClasses")}
+                {this.createButtons("playerProficiencies")}
             </div>
         );
     }

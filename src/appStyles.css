@@ -101,7 +101,7 @@ html, body {
 
 @keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
 
-#namePanel, #classPanel, #proficiencyPanel {
+#playerName, #playerClasses, #playerProficiencies {
     margin-top: 200px;
     transition: box-shadow .3s;
     width: 300px;
@@ -135,23 +135,23 @@ html, body {
     box-shadow: inset 0 0 0 rgba(255,255,255,0.3), 0 0 1.2em rgba(255,255,255,0.5);
 }
 
-#namePanel {
+#playerName {
     -webkit-animation-delay: 0.7s;
     -moz-animation-delay: 0.7s;
     animation-delay: 0.7s;
 }
 
-#namePanel > input, label {
+#playerName > input, label {
     display: block;
     margin: 0 auto;
 }
 
-#namePanel > label {
+#playerName > label {
     margin: 50px 0 150px 0;
     font-size: 28px;
 }
 
-#namePanel > input {
+#playerName > input {
     width: 150px;
     height: 30px;
     text-align: center;
@@ -162,24 +162,24 @@ html, body {
     font-family: 'Orbitron', 'Open Sans', serif;
 }
 
-#namePanel > input:hover {
+#playerName > input:hover {
     background-color: rgb(31, 30, 30);
     box-shadow: inset 0 0 0 rgba(31,30,30,0.5), 0 0 1.5em rgba(31,30,30,0.7);
     border: black solid 2px;
 }
 
-#classPanel {
+#playerClasses {
     -webkit-animation-delay: 1.2s;
     -moz-animation-delay:1.2s;
     animation-delay: 1.2s;
 }
 
-#classPanel > label {
+#playerClasses > label {
     margin: 50px 0 10px 0;
     font-size: 28px;
 }
 
-#classPanel > button {
+#playerClasses > button {
     margin: 25px 10px 10px 10px;
     height: 55px;
     width: 205px;
@@ -189,24 +189,24 @@ html, body {
     cursor: pointer;
 }
 
-#classPanel > button:hover {
+#playerClasses > button:hover {
     background-color: rgb(31, 30, 30);
     box-shadow: inset 0 0 0 rgba(31,30,30,0.5), 0 0 1.5em rgba(31,30,30,0.7);
     border: black solid 2px;
 }
 
-#proficiencyPanel {
+#playerProficiencies {
     -webkit-animation-delay: 1.6s;
     -moz-animation-delay: 1.6s;
     animation-delay: 1.6s;
 }
 
-#proficiencyPanel > label {
+#playerProficiencies > label {
     margin: 50px 0 25px 0;
     font-size: 28px;
 }
 
-#proficiencyPanel > button {
+#playerProficiencies > button {
     margin: 10px 10px 5px 10px;
     height: 45px;
     width: 205px;
@@ -216,7 +216,7 @@ html, body {
     cursor: pointer;
 }
 
-#proficiencyPanel > button:hover {
+#playerProficiencies > button:hover {
     background-color: rgb(31, 30, 30);
     box-shadow: inset 0 0 0 rgba(31,30,30,0.5), 0 0 1.5em rgba(31,30,30,0.7);
     border: black solid 2px;
