@@ -1,134 +1,111 @@
-#characterCreation {
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+/*
+ * CHARACTER CREATION
+ */
+#characterCreation 
+{
     height: 100%;
     width: 100%;
-    font-family: "Roboto";
-    letter-spacing: 0.30em;
+    font-family: 'Orbitron', 'Open Sans', serif;
     font-size: 14px;
     font-weight: normal;
-    text-align: center;
+    letter-spacing: 0.30em;
     background-color: rgba(33, 45, 56, 0);
-    font-family: 'Orbitron', 'Open Sans', serif;
 }
-
-@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
-
-#playerName, #playerClasses, #playerProficiencies {
-    margin-top: 200px;
-    transition: box-shadow .3s;
-    width: 300px;
+#characterCreation > * 
+{
     height: 500px;
+    width: 300px;
     margin: 50px;
-    color: white;
-    box-shadow: inset 0 0 0.8em rgba(255,255,255,0.3), 0 0 0.8em rgba(255,255,255,0.3);
-    border: #fff solid 2px;
     display: inline-block; 
     vertical-align: top;
+    color: white;
+    border: #fff solid 2px;
+    box-shadow: inset 0 0 0.8em rgba(255,255,255,0.3), 0 0 0.8em rgba(255,255,255,0.3);
     transition: all 1s;
-
     opacity:0;
-    -webkit-animation:fadeIn ease-in 1;
-    -moz-animation:fadeIn ease-in 1;
-    animation:fadeIn ease-in 1;
-  
-    -webkit-animation-fill-mode:forwards;
-    -moz-animation-fill-mode:forwards;
-    animation-fill-mode:forwards;
-  
-    -webkit-animation-duration:1s;
-    -moz-animation-duration:1s;
-    animation-duration:1s;
+    animation:fadeIn ease-in 1; -webkit-animation:fadeIn ease-in 1; -moz-animation:fadeIn ease-in 1;
+    animation-fill-mode:forwards; -webkit-animation-fill-mode:forwards; -moz-animation-fill-mode:forwards;
+    animation-duration:1s; -webkit-animation-duration:1s; -moz-animation-duration:1s;
 }
-
-#characterCreation > *:hover {
+#characterCreation > *:hover 
+{
     color: rgba(0,0,0,0.8);
     background-color: #fff;
-    transition: 1.0s;
     box-shadow: inset 0 0 0 rgba(255,255,255,0.3), 0 0 1.2em rgba(255,255,255,0.5);
+    transition: 1.0s;
 }
-
-#playerName {
-    -webkit-animation-delay: 0.7s;
-    -moz-animation-delay: 0.7s;
-    animation-delay: 0.7s;
-}
-
-#playerName > input, label {
+#characterCreation > * > label 
+{
     display: block;
-    margin: 0 auto;
-}
-
-#playerName > label {
-    margin: 50px 0 150px 0;
     font-size: 28px;
 }
-
-#playerName > input {
-    width: 150px;
-    height: 30px;
-    text-align: center;
-    color: white;
+#characterCreation > * > input, #characterCreation > * > button
+{
     background-color: rgb(31, 30, 30);
-    box-shadow: inset 0 0 0.8em rgba(255,255,255,0.3), 0 0 0.8em rgba(255,255,255,0.3);
     border: #fff solid 2px;
+    box-shadow: inset 0 0 0.8em rgba(255,255,255,0.3), 0 0 0.8em rgba(255,255,255,0.3);
+}
+#characterCreation > * > input
+{
+    height: 30px;
+    width: 150px;
+    margin: 0 auto;
+    color: white;
+    text-align: center;
     font-family: 'Orbitron', 'Open Sans', serif;
 }
-
-#playerName > input:hover {
-    background-color: rgb(31, 30, 30);
+#characterCreation > * > button 
+{
+    cursor: pointer;
+}
+#characterCreation > * > input:hover, #characterCreation > * > button:hover 
+{
     box-shadow: inset 0 0 0 rgba(31,30,30,0.5), 0 0 1.5em rgba(31,30,30,0.7);
     border: black solid 2px;
 }
-
-#playerClasses {
-    -webkit-animation-delay: 1.2s;
-    -moz-animation-delay:1.2s;
-    animation-delay: 1.2s;
+/*
+ * PLAYER NAME
+ */
+#playerName 
+{
+    animation-delay: 0.7s; -webkit-animation-delay: 0.7s; -moz-animation-delay: 0.7s;
 }
-
-#playerClasses > label {
+#playerName > label 
+{
+    margin: 50px 0 150px 0;
+}
+/*
+ * PLAYER CLASSES
+ */
+#playerClasses 
+{
+    animation-delay: 1.2s; -webkit-animation-delay: 1.2s; -moz-animation-delay:1.2s;
+}
+#playerClasses > label 
+{
     margin: 50px 0 10px 0;
-    font-size: 28px;
 }
-
-#playerClasses > button {
-    margin: 25px 10px 10px 10px;
+#playerClasses > button 
+{
     height: 55px;
     width: 205px;
-    background-color: rgb(31, 30, 30);
-    box-shadow: inset 0 0 0.8em rgba(255,255,255,0.3), 0 0 0.8em rgba(255,255,255,0.3);
-    border: #fff solid 2px;
-    cursor: pointer;
+    margin: 25px 10px 10px 10px;
 }
-
-#playerClasses > button:hover {
-    background-color: rgb(31, 30, 30);
-    box-shadow: inset 0 0 0 rgba(31,30,30,0.5), 0 0 1.5em rgba(31,30,30,0.7);
-    border: black solid 2px;
+/*
+ * PLAYER PROFICIENCIES
+ */
+#playerProficiencies 
+{
+    animation-delay: 1.6s; -webkit-animation-delay: 1.6s; -moz-animation-delay: 1.6s;
 }
-
-#playerProficiencies {
-    -webkit-animation-delay: 1.6s;
-    -moz-animation-delay: 1.6s;
-    animation-delay: 1.6s;
-}
-
-#playerProficiencies > label {
+#playerProficiencies > label 
+{
     margin: 50px 0 25px 0;
-    font-size: 28px;
 }
-
-#playerProficiencies > button {
-    margin: 10px 10px 5px 10px;
+#playerProficiencies > button
+{
     height: 45px;
     width: 205px;
-    background-color: rgb(31, 30, 30);
-    box-shadow: inset 0 0 0.8em rgba(255,255,255,0.3), 0 0 0.8em rgba(255,255,255,0.3);
-    border: #fff solid 2px;
-    cursor: pointer;
-}
-
-#playerProficiencies > button:hover {
-    background-color: rgb(31, 30, 30);
-    box-shadow: inset 0 0 0 rgba(31,30,30,0.5), 0 0 1.5em rgba(31,30,30,0.7);
-    border: black solid 2px;
+    margin: 10px 10px 5px 10px;
 }
