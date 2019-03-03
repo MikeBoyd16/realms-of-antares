@@ -1,8 +1,13 @@
 import React, { Component } from 'react';
-import '../appStyles.css';
-import '../css/CharacterCreation.css';
+import {GameWorldContext} from '../GameWorldContext';
+
+// Components
 import AttributeSelect from './AttributeSelect';
 import NameSelect from './NameSelect';
+import StartGame from './StartGame';
+
+// Styles
+import '../css/CharacterCreation.css';
 
 class CharacterCreation extends Component {
     constructor(props) {
@@ -19,7 +24,17 @@ class CharacterCreation extends Component {
                 }
             },
         }
+        this.createStartGame = this.createStartGame.bind(this);
         this.createButtons = this.createButtons.bind(this);
+    }
+    createStartGame(playerName, playerClass, playerProficiency) {
+        if(playerName !== "" &&
+            playerClass !== "" &&
+            playerProficiency !== "") {
+            return(<StartGame visible="visible"/>);
+        } else {
+            return(<StartGame visible="notVisible"/>);
+        }
     }
     createButtons = (buttonType) => {
         return(
@@ -34,11 +49,16 @@ class CharacterCreation extends Component {
     }
     render() {
         return(
-            <div id="characterCreation">
-                <NameSelect/>
-                {this.createButtons("playerClass")}
-                {this.createButtons("playerProficiency")}
-            </div>
+            <GameWorldContext.Consumer>
+            {({ playerName, playerClass, playerProficiency }) => (
+                <div id="characterCreation">
+                    <NameSelect/>
+                    {this.createButtons("playerClass")}
+                    {this.createButtons("playerProficiency")}
+                    {this.createStartGame(playerName, playerClass, playerProficiency)}
+                </div>
+            )}
+            </GameWorldContext.Consumer>
         );
     }
 }

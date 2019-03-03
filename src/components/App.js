@@ -28,6 +28,16 @@ class App extends Component {
       return(<TitleMenu />);
     } else if(this.state.screen === "CharacterCreation") {
       return(<CharacterCreation />);
+    } else if(this.state.screen === "Activity") {
+      return(
+        <>
+          <Navigation />
+          <CharacterStatus />
+          <ActivityFeed/>
+          <ActionBar />
+          <DialogueBar />
+        </>
+      );
     }
   }
 
@@ -77,9 +87,9 @@ class App extends Component {
     updateScreen: this.updateScreen,
 
     // Character Creation
-    playerName: " ",
-    playerClass: " ",
-    playerProficiency: " ",
+    playerName: "",
+    playerClass: "",
+    playerProficiency: "",
     setPlayerName: this.setPlayerName,
     setAttributeSelection: this.setAttributeSelection,
 
