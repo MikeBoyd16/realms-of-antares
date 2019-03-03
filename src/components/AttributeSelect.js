@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import {GameWorldContext} from '../GameWorldContext';
 
-class CharacterCreationButton extends Component {
+class AttributeSelect extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -38,4 +38,4 @@ class CharacterCreationButton extends Component {
     }
 }
 
-export default CharacterCreationButton;
+export default AttributeSelect;

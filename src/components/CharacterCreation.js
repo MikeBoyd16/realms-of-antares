@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import '../appStyles.css';
 import '../css/CharacterCreation.css';
-import CharacterCreationButton from './CharacterCreationButton';
-import CharacterCreationInput from './CharacterCreationInput';
+import AttributeSelect from './AttributeSelect';
+import NameSelect from './NameSelect';
 
 class CharacterCreation extends Component {
     constructor(props) {
@@ -27,7 +27,7 @@ class CharacterCreation extends Component {
                 <label>{this.state.buttonTypes[buttonType]["labelName"]}</label>
                 {
                     this.state.buttonTypes[buttonType]["buttonNames"].map((name, idx) => 
-                    <CharacterCreationButton key={idx} buttonType={buttonType} name={name}/>)
+                    <AttributeSelect key={idx} buttonType={buttonType} name={name}/>)
                 }
             </div>
         );
@@ -35,7 +35,7 @@ class CharacterCreation extends Component {
     render() {
         return(
             <div id="characterCreation">
-                <CharacterCreationInput/>
+                <NameSelect/>
                 {this.createButtons("playerClass")}
                 {this.createButtons("playerProficiency")}
             </div>

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import {GameWorldContext} from '../GameWorldContext';
 
-class CharacterCreationInput extends Component {
+class NameSelect extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -31,4 +31,4 @@ class CharacterCreationInput extends Component {
     }
 }
 
-export default CharacterCreationInput;
+export default NameSelect;
