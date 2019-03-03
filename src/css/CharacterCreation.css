@@ -10,7 +10,7 @@
     font-size: 14px;
     font-weight: normal;
     letter-spacing: 0.30em;
-    background-color: rgba(33, 45, 56, 0);
+    background-color: rgba(0, 0, 0, 0);
 }
 #characterCreation > * 
 {
@@ -40,7 +40,7 @@
     display: block;
     font-size: 28px;
 }
-#characterCreation > * > input, #characterCreation > * > button
+#characterCreation > * > input, #characterCreation > * > * > button
 {
     background-color: rgb(31, 30, 30);
     border: #fff solid 2px;
@@ -55,11 +55,11 @@
     text-align: center;
     font-family: 'Orbitron', 'Open Sans', serif;
 }
-#characterCreation > * > button 
+#characterCreation > * > * > button 
 {
     cursor: pointer;
 }
-#characterCreation > * > input:hover, #characterCreation > * > button:hover 
+#characterCreation > * > input:hover, #characterCreation > * > * > button:hover 
 {
     box-shadow: inset 0 0 0 rgba(31,30,30,0.5), 0 0 1.5em rgba(31,30,30,0.7);
     border: black solid 2px;
@@ -86,7 +86,7 @@
 {
     margin: 50px 0 10px 0;
 }
-#playerClasses > button 
+#playerClasses > * > button 
 {
     height: 55px;
     width: 205px;
@@ -103,7 +103,7 @@
 {
     margin: 50px 0 25px 0;
 }
-#playerProficiencies > button
+#playerProficiencies > * > button
 {
     height: 45px;
     width: 205px;

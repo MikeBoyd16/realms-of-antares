@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
+import {GameWorldContext} from '../GameWorldContext';
 import '../appStyles.css';
 import '../css/CharacterCreation.css';
+import CharacterCreationButton from './CharacterCreationButton';
 
 class CharacterCreation extends Component {
     constructor(props) {
@@ -17,10 +19,9 @@ class CharacterCreation extends Component {
                 }
             },
             classSelected: " ",
-            proficiencySelected: " "
+            proficiencySelected: " ",
         }
         this.createButtons = this.createButtons.bind(this);
-        this.handleButtonSelect = this.handleButtonSelect.bind(this);
     }
     createButtons = (buttonType) => {
         return(
@@ -28,13 +29,10 @@ class CharacterCreation extends Component {
                 <label>{this.state.buttonTypes[buttonType]["labelName"]}</label>
                 {
                     this.state.buttonTypes[buttonType]["buttonNames"].map((name, idx) => 
-                    <button key={idx} id={name} onClick={this.handleButtonSelect}>{name}</button>)
+                    <CharacterCreationButton key={idx} buttonType={buttonType} name={name}/>)
                 }
             </div>
         );
-    }
-    handleButtonSelect = (event) => {
-
     }
     render() {
         return(

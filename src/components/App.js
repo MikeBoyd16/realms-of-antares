@@ -17,6 +17,13 @@ import locations from '../locations.json';
 import '../appStyles.css';
 
 class App extends Component {
+  setSelection = (buttonType, name) => {
+    if(buttonType === "playerClasses") {
+      this.setState({ selectedClass: name });
+    } else {
+      this.setState({ selectedProficiency: name });
+    }
+  }
   changeScreen = (screen) => {
     this.setState({ screen });
   }
@@ -58,7 +65,11 @@ class App extends Component {
     displayArrivalMessage: this.displayArrivalMessage,
     updateActivityFeed: this.updateActivityfeed,
     manageDisplay: this.manageDisplay,
-    screen: "TitleMenu"
+    screen: "TitleMenu",
+    setSelection: this.setSelection,
+    selectedName: " ",
+    selectedClass: " ",
+    selectedProficiency: " ",
   };
   componentDidUpdate(prevState) {
     if(prevState.screen !== this.state.screen) {
