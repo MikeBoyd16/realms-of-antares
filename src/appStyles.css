@@ -40,9 +40,9 @@ html, body {
  */
 #titleMenu {
     margin: 0 auto;
-    margin-top: 100px;
-    height: 90%;
-    width: 100%;
+    margin-top: 160px;
+    height: 100vh;
+    width: 100vw;
     text-align: center;
     background-color: rgba(33, 45, 56, 0);
     border: 2px solid rgba(204, 204, 204, 0);
@@ -50,15 +50,17 @@ html, body {
 
 #titlePanel {
     margin: 0 auto;
-    height: 65%;
-    width: 29%;
+    height: 40vh;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    width: 200vw;
     box-shadow: inset 0 0 0.8em rgba(255,255,255,0.3), 0 0 0.8em rgba(255,255,255,0.3);
     border: #fff solid 2px;
     background:  rgba(63, 63, 63, 0.1);
 }
 
 #titlePanel > img {
-    margin-top: 80px;
+    margin-top: 70px;
     margin-bottom: 80px;
     height: 168px;
     width: 300px;
