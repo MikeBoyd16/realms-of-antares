@@ -78,15 +78,15 @@
 /*
  * PLAYER CLASSES
  */
-#playerClasses 
+#playerClass 
 {
     animation-delay: 1.2s; -webkit-animation-delay: 1.2s; -moz-animation-delay:1.2s;
 }
-#playerClasses > label 
+#playerClass > label 
 {
     margin: 50px 0 10px 0;
 }
-#playerClasses > * > button 
+#playerClass > * > button 
 {
     height: 55px;
     width: 205px;
@@ -95,15 +95,15 @@
 /*
  * PLAYER PROFICIENCIES
  */
-#playerProficiencies 
+#playerProficiency
 {
     animation-delay: 1.6s; -webkit-animation-delay: 1.6s; -moz-animation-delay: 1.6s;
 }
-#playerProficiencies > label 
+#playerProficiency > label 
 {
     margin: 50px 0 25px 0;
 }
-#playerProficiencies > * > button
+#playerProficiency > * > button
 {
     height: 45px;
     width: 205px;

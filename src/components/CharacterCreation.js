@@ -1,25 +1,23 @@
 import React, { Component } from 'react';
-import {GameWorldContext} from '../GameWorldContext';
 import '../appStyles.css';
 import '../css/CharacterCreation.css';
 import CharacterCreationButton from './CharacterCreationButton';
+import CharacterCreationInput from './CharacterCreationInput';
 
 class CharacterCreation extends Component {
     constructor(props) {
         super(props);
         this.state = {
             buttonTypes: {
-                playerClasses: {
+                playerClass: {
                     labelName: "Class",
                     buttonNames: ["Soldier", "Engineer", "Merchant", "Diplomat"]
                 },
-                playerProficiencies: {
+                playerProficiency: {
                     labelName: "Proficiency",
                     buttonNames:  ["Navigation", "Barter", "Hacking", "Unarmed", "Athletics", "History"]
                 }
             },
-            classSelected: " ",
-            proficiencySelected: " ",
         }
         this.createButtons = this.createButtons.bind(this);
     }
@@ -37,12 +35,9 @@ class CharacterCreation extends Component {
     render() {
         return(
             <div id="characterCreation">
-                <div id="playerName">
-                    <label>Name</label>
-                    <input></input>
-                </div>
-                {this.createButtons("playerClasses")}
-                {this.createButtons("playerProficiencies")}
+                <CharacterCreationInput/>
+                {this.createButtons("playerClass")}
+                {this.createButtons("playerProficiency")}
             </div>
         );
     }

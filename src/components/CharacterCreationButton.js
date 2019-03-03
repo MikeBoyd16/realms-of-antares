@@ -10,14 +10,14 @@ class CharacterCreationButton extends Component {
         }
         this.setStyle = this.setStyle.bind(this);
     }
-    setStyle(selectedClass, selectedProficiency) {
+    setStyle(playerClass, playerProficiency) {
         var selectedStyle = {
             backgroundColor: "rgb(71, 70, 70)"
         }
         var unselectedStyle = {
             backgroundColor: "rgb(31, 30, 30)"
         }
-        if(selectedClass === this.state.name || selectedProficiency === this.state.name) {
+        if(playerClass === this.state.name || playerProficiency === this.state.name) {
             return selectedStyle;
         } else {
             return unselectedStyle;
@@ -26,10 +26,10 @@ class CharacterCreationButton extends Component {
     render() {
         return(
             <GameWorldContext.Consumer>
-                {({ selectedClass, selectedProficiency, setSelection }) => (
+                {({ playerClass, playerProficiency, setAttributeSelection }) => (
                     <div>
-                        <button style={this.setStyle(selectedClass, selectedProficiency)} 
-                        onClick={() => setSelection(this.state.buttonType, this.state.name)}>
+                        <button style={this.setStyle(playerClass, playerProficiency)} 
+                        onClick={() => setAttributeSelection(this.state.buttonType, this.state.name)}>
                         {this.state.name}</button>
                     </div>
                 )}

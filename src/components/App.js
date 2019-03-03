@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
+import {GameWorldContext} from '../GameWorldContext';
 
-// Import components
+// Data
+import locations from '../locations.json';
+
+// Components
 import TitleMenu from './TitleMenu';
 import CharacterCreation from './CharacterCreation';
 import Navigation from './Navigation';
@@ -9,43 +13,15 @@ import ActivityFeed from './ActivityFeed';
 import ActionBar from './ActionBar';
 import DialogueBar from './DialogueBar';
 
-// Import game contect and data
-import {GameWorldContext} from '../GameWorldContext';
-import locations from '../locations.json';
-
-// Import App component styles
+// Styles
 import '../appStyles.css';
 
 class App extends Component {
-  setSelection = (buttonType, name) => {
-    if(buttonType === "playerClasses") {
-      this.setState({ selectedClass: name });
-    } else {
-      this.setState({ selectedProficiency: name });
-    }
-  }
+  /* 
+   * SCREEN 
+   */
   changeScreen = (screen) => {
     this.setState({ screen });
-  }
-  changeLocation = location => {
-    this.setState({ location });
-  }
-  updateActivityFeed = (activityFeed) => {
-    this.setState({ activityFeed });
-  }
-  manageDisplay = (location, actionMessage, arrivalMessage, activityFeed) => {
-    // Set the new location
-    this.changeLocation(location);
-
-    // Display the action message
-    activityFeed.push(actionMessage);
-    this.updateActivityFeed(activityFeed);
-
-    // Display the arrival message after 3 seconds
-    setTimeout(() => {
-      activityFeed.push(arrivalMessage);
-      this.setState({ activityFeed });
-    }, 3000);
   }
   updateScreen = () => {
     if(this.state.screen === "TitleMenu") {
@@ -54,28 +30,69 @@ class App extends Component {
       return(<CharacterCreation />);
     }
   }
-  state = {
-    gameWorldLocations: locations,
-    location: locations["Riverstar"],
-    currentNotification: locations["Riverstar"]["message"],
-    activityFeed: [locations["Riverstar"]["message"]],
-    changeScreen: this.changeScreen,
-    updateScreen: this.updateScreen,
-    changeLocation: this.changeLocation,
-    displayArrivalMessage: this.displayArrivalMessage,
-    updateActivityFeed: this.updateActivityfeed,
-    manageDisplay: this.manageDisplay,
-    screen: "TitleMenu",
-    setSelection: this.setSelection,
-    selectedName: " ",
-    selectedClass: " ",
-    selectedProficiency: " ",
-  };
-  componentDidUpdate(prevState) {
-    if(prevState.screen !== this.state.screen) {
 
+  /*
+   * CHARACTER CREATION
+   */
+  setPlayerName = (playerName) => {
+    this.setState({ playerName: playerName });
+  }
+  setAttributeSelection = (buttonType, value) => {
+    if(buttonType === "playerClass") {
+      this.setState({ playerClass: value });
+    } else if (buttonType === "playerProficiency") {
+      this.setState({ playerProficiency: value });
+    } else {
+      console.log("Error: Unable to set player attribute during character creation.");
     }
   }
+
+  /*
+   * LOCATION
+   */
+  changeLocation = location => {
+    this.setState({ location });
+  }
+
+  /*
+   * ACTIVITY
+   */
+  updateActivityFeed = (activityFeed) => {
+    this.setState({ activityFeed });
+  }
+  manageDisplay = (location, actionMessage, arrivalMessage, activityFeed) => {
+    this.changeLocation(location);
+    activityFeed.push(actionMessage);
+    this.updateActivityFeed(activityFeed);
+    setTimeout(() => {
+      activityFeed.push(arrivalMessage);
+      this.setState({ activityFeed });
+    }, 3000);
+  }
+
+  state = {
+    // Screen
+    screen: "TitleMenu",
+    changeScreen: this.changeScreen,
+    updateScreen: this.updateScreen,
+
+    // Character Creation
+    playerName: " ",
+    playerClass: " ",
+    playerProficiency: " ",
+    setPlayerName: this.setPlayerName,
+    setAttributeSelection: this.setAttributeSelection,
+
+    // Location
+    gameWorldLocations: locations,
+    location: locations["Riverstar"],
+    changeLocation: this.changeLocation,
+
+    // Activity
+    activityFeed: [locations["Riverstar"]["message"]],
+    updateActivityFeed: this.updateActivityfeed,
+    manageDisplay: this.manageDisplay,
+  };
   
   render() {
     return (
