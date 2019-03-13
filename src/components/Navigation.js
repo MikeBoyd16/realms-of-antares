@@ -2,12 +2,15 @@ import React, { Component } from 'react';
 
 // Styles
 import '../appStyles.css';
+import '../css/Navigation.css';
 
 class Navigation extends Component {
     render() {
         return (
             <div id="navigation">
-                Navigation
+                <button id="navButton">Game</button>
+                <button id="navButton">Character</button>
+                <button id="navButton">Export Save</button>
             </div>
         );
     }
