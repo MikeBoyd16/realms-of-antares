@@ -47,28 +47,18 @@ img
     background-color: rgb(255, 255, 255);
     box-shadow: inset 0 0 1em rgba(255, 255, 255, 0.5), 0 0 1em rgba(255, 255, 255, 0.5);
 }
-
-/*
- * NAVIGATION
- */
-#navigation {
-    margin: 3px;
-    margin-top: 10vh;
-    height: 15%;
-    width: 100%;
-}
-
 /*
  * CHARACTER STATUS
  */
-#characterStatus {
+#characterStatus 
+{
     height: 40vh;
     width: 10vw;
     margin: 0.5vw;
     float: left;
 }
-
-#fadePanel {
+#fadePanel 
+{
     margin: 0 auto;
     margin-top: 1px;
     height: 99%;
@@ -77,19 +67,19 @@ img
     box-shadow: inset 0 0 1em rgba(255, 255, 255, 0.5), 0 0 1em rgba(255, 255, 255, 0.5);
     border: rgb(255, 255, 255) solid 2px;
 }
-
 /*
  * ACTION BAR
  */
-#actionBar {
+#actionBar 
+{
     margin: 0 auto;
     margin-top: 2vh;
     height: 25vh;
     width: 45vw;
     text-align: center;
 }
-
-#actions {
+#actions 
+{
     padding: 16px 11px 14px 11px;
     width: 100%;
     height: 100%;
@@ -110,8 +100,8 @@ img
     width: 100%;
     height: 24%;
 }
-
-#dialogueButton {
+#dialogueButton 
+{
     font-family: 'Orbitron', 'Open Sans', serif;
     text-decoration: none;
     border: none;
@@ -131,12 +121,12 @@ img
     width: 155px;
     background: rgba(0, 163, 204, .6);
 }
-
-#dialogueButton:hover {
+#dialogueButton:hover 
+{
     background-color: rgb(38, 185, 253);
 }
-
-.dialogueButtonDisabled {
+.dialogueButtonDisabled 
+{
     background: rgba(0, 163, 204, 0.1);
     border: 1px solid black;
-  }
+}

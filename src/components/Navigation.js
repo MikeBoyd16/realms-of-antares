@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-// Import App component styles
+// Styles
 import '../appStyles.css';
 
 class Navigation extends Component {
