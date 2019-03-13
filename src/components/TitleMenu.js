@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
-
-// Import game context
 import { GameWorldContext } from '../GameWorldContext';
 
-// Import component styles
+// Styles
 import '../appStyles.css';
 
 class TitleMenu extends Component {

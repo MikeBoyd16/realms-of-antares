@@ -31,11 +31,9 @@ class App extends Component {
     } else if(this.state.screen === "Activity") {
       return(
         <>
-          <Navigation />
-          <CharacterStatus />
-          <ActivityFeed/>
-          <ActionBar />
-          <DialogueBar />
+            <Navigation />
+            <ActivityFeed/>
+            <ActionBar />
         </>
       );
     }
@@ -67,17 +65,12 @@ class App extends Component {
   /*
    * ACTIVITY
    */
-  updateActivityFeed = (activityFeed) => {
-    this.setState({ activityFeed });
+  updateMessage = (message) => {
+    this.setState({ message });
   }
-  manageDisplay = (location, actionMessage, arrivalMessage, activityFeed) => {
+  manageDisplay = (location, actionMessage) => {
     this.changeLocation(location);
-    activityFeed.push(actionMessage);
-    this.updateActivityFeed(activityFeed);
-    setTimeout(() => {
-      activityFeed.push(arrivalMessage);
-      this.setState({ activityFeed });
-    }, 3000);
+    this.updateMessage(actionMessage);
   }
 
   state = {
@@ -100,7 +93,8 @@ class App extends Component {
 
     // Activity
     activityFeed: [locations["Riverstar"]["message"]],
-    updateActivityFeed: this.updateActivityfeed,
+    message: locations["Riverstar"]["message"],
+    updateMessage: this.updateMessage,
     manageDisplay: this.manageDisplay,
   };
   

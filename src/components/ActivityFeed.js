@@ -1,39 +1,44 @@
 import React from "react";
-
-// Import game context
 import { GameWorldContext } from '../GameWorldContext';
 
-// Import ActivityFeed component styles
+// Styles
 import '../appStyles.css';
+import '../css/ActivityFeed.css';
 
 class ActivityFeed extends React.Component {
   constructor(props) {
     super(props);
-    this.messagesEnd = React.createRef();
+    this.state = {
+      delay: 0
+    }
+    this.renderMessage = this.renderMessage.bind(this);
+    this.incrementDelay = this.incrementDelay.bind(this);
+    this.resetDelay = this.resetDelay.bind(this);
   }
-  scrollToBottom = () => {
-    this.messagesEnd.current.scrollIntoView({ behavior: "smooth" });
+  renderMessage(message) {
+    var characters = message.split('');
+    return (
+      <div id="message">
+      {
+        characters.map(([character, idx]) => <span key={character + idx + Math.random()} id="character" style={{animationDelay: this.incrementDelay()}}>{character}</span>)
+      }
+      {this.resetDelay()}
+      </div>
+    );
   }
-
-  componentDidMount() {
-    this.scrollToBottom();
+  incrementDelay() {
+    this.state.delay = this.state.delay + 0.05;
+    return String(this.state.delay) + "s";
   }
-
-  componentDidUpdate() {
-    this.scrollToBottom();
+  resetDelay() {
+    this.state.delay = 0;
   }
-
   render() {
     return (
       <GameWorldContext.Consumer>
-        {({ activityFeed }) => (
+        {({ message }) => (
           <div id="activityFeed">
-            <div id="notifications">
-              {
-                activityFeed.map((notification, i) => <div key={i} className="notification">{notification}</div>)
-              }
-              <div ref={this.messagesEnd}></div>
-            </div>
+            {this.renderMessage(message)}
           </div>
         )}
       </GameWorldContext.Consumer>

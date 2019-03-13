@@ -1,0 +1,26 @@
+#activityFeed 
+{
+    height: 30vh;
+    width: 30vw;
+    margin: 0 auto;
+    padding: 2vw;
+    color: white;
+    text-align: center;
+    font-style: italic;
+    font-family: Monospace, 'Open Sans', serif;
+    overflow: hidden;
+}
+#message
+{
+    margin-top: 10vh;
+    text-align: left;
+    font-size: 26px;
+    display: inline-block;
+}
+#character
+{
+    opacity: 0;
+    animation: fadeIn ease-in 1; -webkit-animation:fadeIn ease-in 1; -moz-animation: fadeIn ease-in 1;
+    animation-fill-mode: forwards; -webkit-animation-fill-mode: forwards; -moz-animation-fill-mode: forwards;
+    animation-duration: 0.8s; -webkit-animation-duration: 0.8s; -moz-animation-duration: 0.8s;
+}

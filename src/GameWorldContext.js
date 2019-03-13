@@ -21,6 +21,7 @@ export const GameWorldContext = React.createContext({
 
     // Activity
     activityFeed: [locations["Riverstar"]["message"]],
-    updateActivityFeed: () => {},
+    message: locations["Riverstar"]["message"],
+    updateMessage: () => {},
     manageDisplay: () => {},
 });

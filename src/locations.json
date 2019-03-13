@@ -1,11 +1,4 @@
 {
-    "Praoria": 
-    { 
-        "name": "Praoria",
-        "message": "None",
-        "actions": "None"
-    },
-
     "Riverstar": 
     { 
         "name": "Riverstar", 
@@ -32,20 +25,6 @@
                 "name": "Twotails Tavern",
                 "message": "Travelling to Twotails Tavern...",
                 "address": "Riverstar:Tavern" 
-            },
-            "GoToGeneralStore": 
-            { 
-                "type": "Location", 
-                "name": "Baldric's Goods",
-                "message": "Travelling to Baldric's Goods...",
-                "address": "Riverstar:GeneralStore" 
-            },
-            "GoToBlacksmith": 
-            { 
-                "type": "Location", 
-                "name": "Firehilt Furnace",
-                "message": "Travelling to Firehilt Furnace...",
-                "address": "Riverstar:Blacksmith" 
             },
             "GoToTravel": 
             { 

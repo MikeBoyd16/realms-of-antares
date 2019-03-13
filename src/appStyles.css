@@ -1,89 +1,51 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto);
-
-html, body {
-    width: 100%;
-    height: 100%;
-    text-align: center;
+html, body, #root 
+{
+    min-width: 100vw;
+    min-height: 100vh;
     margin: 0 auto;
+    text-align: center;
     background-color: rgb(31, 30, 30);
     overflow: hidden;
 }
-
-#root, #components {
-    min-width: 100%;
-    min-height: 100%;
-}
-
-#components {
-    margin-top: 50px;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;  
-    
-    -webkit-flex-flow: row wrap;
-    flex-flow: row wrap;
-    
-    font-weight: bold;
-    text-align: center;
-}
-
-#components > * {
-    padding: 10px;
-    flex: 1 100%;
-    background-color: rgb(33, 45, 56);
-}
-
-/* 
- * TITLE MENU 
- */
-#titleMenu {
-    margin: 0 auto;
-    margin-top: 160px;
-    height: 100vh;
-    width: 100vw;
-    text-align: center;
-    background-color: rgba(33, 45, 56, 0);
-    border: 2px solid rgba(204, 204, 204, 0);
-}
-
-#titlePanel {
-    margin: 0 auto;
+#titleMenu
+{
     height: 40vh;
-    margin-left: -50vw;
-    margin-right: -50vw;
-    width: 200vw;
-    box-shadow: inset 0 0 0.8em rgba(255,255,255,0.3), 0 0 0.8em rgba(255,255,255,0.3);
+    width: 150vw;
+    margin: 0 auto;
+    margin-top: 30vh;
+    margin-left: -25vw;
+    margin-right: -25vw;
+    background-color:  rgba(63, 63, 63, 0.1);
+    box-shadow: inset 0 0 2em rgba(255, 255, 255, 0.3), 0 0 0.8em rgba(255,255,255,0.3);
     border: #fff solid 2px;
-    background:  rgba(63, 63, 63, 0.1);
 }
-
-#titlePanel > img {
-    margin-top: 70px;
-    margin-bottom: 80px;
-    height: 168px;
-    width: 300px;
+img 
+{
+    margin-top: 9vh;
+    margin-bottom: 10vh;
+    height: 23vh;
+    width: 20vw;
 }
-
-#actionPanel {
-    margin-top: 10px;
-    height: 42.5%;
+#actionPanel 
+{
+    margin-top: 1vh;
 }
-
-#actionPanel > button {
-    margin: 50px 10px 10px 10px;
-    height: 55px;
-    width: 205px;
-    background: rgba(0, 95, 204, 0.1);
-    box-shadow: inset 0 0 1em rgba(0, 122, 170, 0.5), 0 0 1em rgba(0, 122, 170, 0.5);
-    border: rgb(0, 158, 221) solid 2px;
+#actionPanel > button 
+{
+    height: 7vh;
+    width: 13vw;
+    margin: 5vh 1vw 1vw 0;
+    background-color:  rgba(63, 63, 63, 0.1);
+    box-shadow: inset 0 0 1em rgba(255, 255, 255, 0.5), 0 0 1em rgba(255, 255, 255, 0.5);
+    border: rgb(255, 255, 255) solid 2px;
     cursor: pointer;
 }
-
-#actionPanel > button:hover {
-    background-color: rgb(0, 158, 221);
-    box-shadow: inset 0 0 0 rgba(0,122,170,0.5), 0 0 1.5em rgba(0,122,170,0.7);
+#actionPanel > button:hover 
+{
+    color: black;
+    background-color: rgb(255, 255, 255);
+    box-shadow: inset 0 0 1em rgba(255, 255, 255, 0.5), 0 0 1em rgba(255, 255, 255, 0.5);
 }
 
 /*
@@ -91,47 +53,19 @@ html, body {
  */
 #navigation {
     margin: 3px;
+    margin-top: 10vh;
     height: 15%;
     width: 100%;
-}
-
-/*
- * ACTIVITY FEED
- */
-#activityFeed {
-    margin: 3px; 
-    width: 60%;
-    height: 65%;
-    font-size: 14px;
-    text-align: left;
-    background: rgba(0, 163, 204, .4);
-    backdrop-filter: blur(5px);
-    font-family: "Courier New", Courier, monospace;
-    overflow: hidden;
-}
-
-#notifications {
-    width: 100%;
-    height: 100%;
-    overflow-y: scroll;
-    padding-left: 10px;
-    padding-right: 35px;
-}
-
-.notification {
-    background-color: rgb(33, 45, 56);
-    border: 1px solid rgb(204, 204, 204);
-    padding: 8px;
-    margin: 10px 5px 10px 5px;
 }
 
 /*
  * CHARACTER STATUS
  */
 #characterStatus {
-    margin: 3px; 
-    max-width: 20%;
-    height: 65%;
+    height: 40vh;
+    width: 10vw;
+    margin: 0.5vw;
+    float: left;
 }
 
 #fadePanel {
@@ -139,27 +73,35 @@ html, body {
     margin-top: 1px;
     height: 99%;
     width: 99%;
-    border: 1px solid rgba(255, 255, 255, .4);
-    background-color: rgba(255, 255, 255, .1);
+    background-color:  rgba(63, 63, 63, 0.1);
+    box-shadow: inset 0 0 1em rgba(255, 255, 255, 0.5), 0 0 1em rgba(255, 255, 255, 0.5);
+    border: rgb(255, 255, 255) solid 2px;
 }
 
 /*
  * ACTION BAR
  */
 #actionBar {
-    margin: 3px; 
-    max-width: 20%;
-    height: 66.5%;
-    padding: 5px;
-    background-color: rgb(33, 45, 56);
-    border: 2px solid rgb(204, 204, 204);
+    margin: 0 auto;
+    margin-top: 2vh;
+    height: 25vh;
+    width: 45vw;
+    text-align: center;
 }
 
 #actions {
     padding: 16px 11px 14px 11px;
-    border: 2px solid rgba(0, 163, 204, .9);
+    width: 100%;
+    height: 100%;
+    text-align: center;
 }
 
+#actions > * > button 
+{
+    height: 6vh;
+    width: 30vw;
+    margin: 10px 0 5px 0;
+}
 /*
  * DIALOGUE BAR
  */
@@ -198,13 +140,3 @@ html, body {
     background: rgba(0, 163, 204, 0.1);
     border: 1px solid black;
   }
-  
-@media all and (min-width: 800px) {
-    #activityFeed       { flex: 1 300px; }
-    #navigation         { order: 1 }
-    #characterStatus    { order: 2; } 
-    #activityFeed       { order: 3; }
-    #actionBar          { order: 4; }
-    #dialogueBar        { order: 5; }
-}
-  
