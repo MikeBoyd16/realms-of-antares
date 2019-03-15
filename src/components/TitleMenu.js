@@ -3,6 +3,7 @@ import { GameWorldContext } from '../GameWorldContext';
 
 // Styles
 import '../appStyles.css';
+import '../css/TitleMenu.css';
 
 class TitleMenu extends Component {
     render() {
@@ -11,7 +12,7 @@ class TitleMenu extends Component {
                 {({ changeScreen }) => (
                     <div id="titleMenu">
                         <div id="titlePanel">
-                            <img src={require("../images/title.PNG")} />
+                            <img src={require("../images/title.png")} />
                         </div>
                         <div id="actionPanel">
                             <button onClick={() => changeScreen("CharacterCreation")}>New Game</button>
