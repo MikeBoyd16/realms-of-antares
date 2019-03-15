@@ -16,7 +16,7 @@ class ActionButton extends Component {
     createButton(gameWorldLocations, manageDisplay) {
         return(
             <button className={this.state.classes} onClick={() => manageDisplay(gameWorldLocations[this.state.actionAddress], 
-                this.state.actionMessage)}>{this.state.actionName}</button>
+                this.state.actionMessage)}></button>
         );
     }
     render() {
