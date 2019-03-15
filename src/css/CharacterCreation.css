@@ -1,4 +1,4 @@
-@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
 /*
  * CHARACTER CREATION
  */
@@ -10,7 +10,6 @@
     font-size: 14px;
     font-weight: normal;
     letter-spacing: 0.30em;
-    background-color: rgba(0, 0, 0, 0);
 }
 #playerName, #playerClass, #playerProficiency
 {
@@ -19,8 +18,8 @@
     margin: 110px 50px 50px 50px;
     display: inline-block; 
     vertical-align: top;
-    color: white;
-    border: #fff solid 2px;
+    color: rgb(31, 30, 30);
+    border: rgb(31, 30, 30) solid 2px;
     box-shadow: inset 0 0 0.8em rgba(255,255,255,0.3), 0 0 0.8em rgba(255,255,255,0.3);
     transition: all 1s;
     opacity:0;
@@ -30,9 +29,9 @@
 }
 #playerName:hover, #playerClass:hover, #playerProficiency:hover 
 {
-    color: rgba(0,0,0,0.8);
-    background-color: #fff;
-    box-shadow: inset 0 0 0 rgba(255,255,255,0.3), 0 0 1.2em rgba(255,255,255,0.5);
+    color: rgb(31, 30, 30);
+    box-shadow: inset 0 0 0 rgba(31,30,30,0.5), 0 0 1.5em rgba(31,30,30,0.7);
+    border: black solid 2px;
     transition: 1.0s;
 }
 #characterCreation > * > label 
@@ -42,16 +41,16 @@
 }
 #characterCreation > * > input, #characterCreation > * > * > button
 {
-    background-color: rgb(31, 30, 30);
-    border: #fff solid 2px;
-    box-shadow: inset 0 0 0.8em rgba(255,255,255,0.3), 0 0 0.8em rgba(255,255,255,0.3);
+    color: rgb(31,30,30);
+    border: black solid 2px;
+    transition: 0.5s;
 }
 #characterCreation > * > input
 {
     height: 30px;
     width: 150px;
     margin: 0 auto;
-    color: white;
+    color: rgb(31, 30, 30);
     text-align: center;
     font-family: 'Orbitron', 'Open Sans', serif;
 }
@@ -61,8 +60,10 @@
 }
 #characterCreation > * > input:hover, #characterCreation > * > * > button:hover 
 {
+    color: white;
     box-shadow: inset 0 0 0 rgba(31,30,30,0.5), 0 0 1.5em rgba(31,30,30,0.7);
     border: black solid 2px;
+    transition: 0.5s;
 }
 /*
  * PLAYER NAME
@@ -74,6 +75,11 @@
 #playerName > label 
 {
     margin: 50px 0 150px 0;
+}
+#nameInput
+{
+    background-color: white;
+
 }
 /*
  * PLAYER CLASS
@@ -144,9 +150,10 @@
     height: 55px;
     width: 190px;
     opacity: 0;
-    color: rgba(0,0,0,0.8);
-    background-color: #fff;
-    box-shadow: inset 0 0 0 rgba(255,255,255,0.3), 0 0 1.2em rgba(255,255,255,0.5);
+    color: white;
+    background-color: rgb(31, 30, 30);
+    box-shadow: inset 0 0 0 rgba(31,30,30,0.5), 0 0 1.5em rgba(31,30,30,0.7);
+    border: black solid 2px;
     transition: .2s;
     cursor: pointer;
     animation-delay: 1s; -webkit-animation-delay: 1s; -moz-animation-delay: 1s;

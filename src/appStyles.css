@@ -1,6 +1,8 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto);
+@import url('https://fonts.googleapis.com/css?family=Orbitron:400,500,700');
 html, body, #root 
 {
+    font-family: 'Orbitron', 'Open Sans', serif;
     min-width: 100vw;
     min-height: 100vh;
     margin: 0 auto;

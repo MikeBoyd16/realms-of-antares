@@ -12,10 +12,12 @@ class AttributeSelect extends Component {
     }
     setStyle(playerClass, playerProficiency) {
         var selectedStyle = {
-            backgroundColor: "rgb(71, 70, 70)"
+            backgroundColor: "rgb(31, 30, 30)",
+            color: "rgb(255, 255, 255)"
         }
         var unselectedStyle = {
-            backgroundColor: "rgb(31, 30, 30)"
+            backgroundColor: "rgb(255, 255, 255)",
+            color: "rgb(31, 30, 30)"
         }
         if(playerClass === this.state.name || playerProficiency === this.state.name) {
             return selectedStyle;

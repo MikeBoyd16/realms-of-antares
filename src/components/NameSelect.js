@@ -5,16 +5,29 @@ class NameSelect extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            inputBackground: { backgroundColor: "rgb(31, 30, 30)" },
+            inputStyle : {
+                backgroundColor: "rgb(255, 255, 255)" ,
+                color: "rgb(31, 30, 30)"
+            }
         }
         this.onNameChange = this.onNameChange.bind(this);
     }
     onNameChange(event, setPlayerName){
         if(event.target.value !== ""){
-            this.setState({ inputBackground: { backgroundColor: "rgb(71, 70, 70)" } });
+            this.setState({ 
+                inputStyle: { 
+                    backgroundColor: "rgb(31, 30, 30)",
+                    color: "rgb(255, 255, 255)"
+                }
+            });
             setPlayerName(event.target.value);
         } else{
-            this.setState({ inputBackground: { backgroundColor: "rgb(31, 30, 30)" } });
+            this.setState({ 
+                inputStyle: { 
+                    backgroundColor: "rgb(255, 255, 255)",
+                    color: "rgb(31, 30, 30)"
+                }
+            });
         }
     }
     render() {
@@ -23,7 +36,7 @@ class NameSelect extends Component {
             {({ setPlayerName }) => (
                 <div id="playerName">
                     <label>Name</label>
-                    <input style={this.state.inputBackground} onChange={(event) => this.onNameChange(event, setPlayerName)}/>
+                    <input style={this.state.inputStyle} onChange={(event) => this.onNameChange(event, setPlayerName)}/>
                 </div>
             )}
             </GameWorldContext.Consumer>
