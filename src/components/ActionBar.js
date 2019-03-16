@@ -15,7 +15,7 @@ class ActionBar extends Component {
                 <GameWorldContext.Consumer>
                 {({ location, actionMessage }) => (
                     <>
-                    <ActionMessage message={actionMessage} />
+                    <ActionMessage actionMessage={actionMessage} />
                     <div id="actions">
                     {
                         Object.entries(
@@ -23,7 +23,7 @@ class ActionBar extends Component {
                             <ActionButton 
                                 key={key} 
                                 actionAddress={value["address"]} 
-                                actionMessage={value["message"]} 
+                                actionMessage={value["message"]}
                                 classes="button btnLightBlue"
                             />
                         )

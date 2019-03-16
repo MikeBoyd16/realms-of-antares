@@ -20,10 +20,8 @@ export const GameWorldContext = React.createContext({
     changeLocation: () => {},
 
     // Activity
-    activityFeed: [locations["Branch1"]["message"]],
-    gameMessage: locations["Branch1"]["message"],
+    activityFeed: locations["Branch1"]["message"],
     actionMessage: " ",
-    updateGameMessage: () => {},
     updateActionMessage: () => {},
     manageDisplay: () => {},
 });

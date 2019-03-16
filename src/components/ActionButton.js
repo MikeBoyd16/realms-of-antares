@@ -12,7 +12,7 @@ class ActionButton extends Component {
                             className={this.props.classes} 
                             onMouseOver={() => updateActionMessage(this.props.actionMessage)} 
                             onMouseOut={() => updateActionMessage(" ")} 
-                            onClick={() => manageDisplay(gameWorldLocations[this.props.actionAddress], this.props.actionMessage)}>
+                            onClick={() => manageDisplay(gameWorldLocations[this.props.actionAddress])}>
                         </button>
                     </div>
                 )}

@@ -14,13 +14,14 @@ class ActivityFeed extends React.Component {
     this.incrementDelay = this.incrementDelay.bind(this);
     this.resetDelay = this.resetDelay.bind(this);
   }
-  renderMessage(gameMessage) {
-    var characters = gameMessage.split('');
+  renderMessage(location) {
+    var characters = location["message"].split('');
+    console.log(location["name"]);
     return (
       <div id="message">
       {
-        characters.map(([character, idx]) => 
-          <span key={character + idx + Math.random()} 
+        characters.map((character, idx) => 
+          <span key={location["name"] + String(idx)} 
                 id="character" 
                 style={{animationDelay: this.incrementDelay()}}>
                 {character}
@@ -41,11 +42,11 @@ class ActivityFeed extends React.Component {
   render() {
     return (
       <GameWorldContext.Consumer>
-        {({ gameMessage }) => (
-          <div id="activityFeed">
-            {this.renderMessage(gameMessage)}
-          </div>
-        )}
+      {({ location }) => (
+        <div id="activityFeed">
+          {this.renderMessage(location)}
+        </div>
+      )}
       </GameWorldContext.Consumer>
     );
   }

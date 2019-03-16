@@ -9,7 +9,7 @@ class ActionMessage extends Component {
         this.setClass = this.setClass.bind(this);
     }
     setClass() {
-        if(this.props.message === " ") {
+        if(this.props.actionMessage === " ") {
             return " ";
         } else {
             return "move";
@@ -20,7 +20,7 @@ class ActionMessage extends Component {
             <div
                 id="actionMessage" 
                 className={this.setClass()}>
-                {this.props.message}
+                {this.props.actionMessage}
             </div>
         );
     }
