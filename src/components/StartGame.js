@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {GameWorldContext} from '../GameWorldContext';
+import {GameWorldContext} from '../context/GameWorldContext';
 
 class StartGame extends Component {
     constructor(props) {
