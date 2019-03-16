@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 // Styles
-import '../css/CharacterStatus.css'
+import '../css/CharacterSheet.css'
 
 class CharacterStatus extends Component {
     render() {

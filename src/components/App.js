@@ -8,7 +8,7 @@ import locations from '../data/location.json';
 import TitleMenu from './TitleMenu';
 import CharacterCreation from './CharacterCreation';
 import Navigation from './Navigation';
-import CharacterStatus from './CharacterStatus';
+import CharacterSheet from './CharacterSheet';
 import ActivityFeed from './ActivityFeed';
 import ActionBar from './ActionBar';
 
