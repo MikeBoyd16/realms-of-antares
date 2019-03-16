@@ -87,12 +87,12 @@ class App extends Component {
 
     // Location
     gameWorldLocations: locations,
-    location: locations["Riverstar"],
+    location: locations["Branch1"],
     changeLocation: this.changeLocation,
 
     // Activity
-    activityFeed: [locations["Riverstar"]["message"]],
-    message: locations["Riverstar"]["message"],
+    activityFeed: [locations["Branch1"]["message"]],
+    message: locations["Branch1"]["message"],
     updateMessage: this.updateMessage,
     manageDisplay: this.manageDisplay,
   };

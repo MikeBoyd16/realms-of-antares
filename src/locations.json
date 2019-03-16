@@ -1,216 +1,105 @@
 {
-    "Riverstar": 
+    "Branch1": 
     { 
-        "name": "Riverstar", 
-        "message": "You have arrived at Riverstar's town center.", 
+        "message": "You are in Branch 1", 
         "actions": 
         {
-            "GoToTownHall": 
+            "GoToBranch2": 
             { 
-                "type": "Location", 
-                "name": "Town Hall",
-                "message": "Travelling to the Riverstar town hall...",
-                "address": "Riverstar:TownHall" 
+                "type": "Action", 
+                "message": "Go to Branch 2",
+                "address": "Branch2",
+                "stateChnange": "None"
             },
-            "GoToJobBoard": 
+            "GoToBranch3": 
             { 
-                "type": "Location", 
-                "name": "Job Board",
-                "message": "Travelling to the Riverstar job board...",
-                "address": "Riverstar:JobBoard"
+                "type": "Action", 
+                "message": "Go to Branch 3",
+                "address": "Branch3",
+                "stateChnange": "None"
             },
-            "GoToTavern": 
+            "GoToBranch4": 
             { 
-                "type": "Location", 
-                "name": "Twotails Tavern",
-                "message": "Travelling to Twotails Tavern...",
-                "address": "Riverstar:Tavern" 
+                "type": "Action", 
+                "message": "Go to Branch 4",
+                "address": "Branch4",
+                "stateChnange": "None"
             },
-            "GoToTravel": 
+            "GoToBranch5": 
             { 
-                "type": "Location", 
-                "name": "Travel",
-                "message": "None",
-                "address": "Riverstar:Travel" 
+                "type": "Action", 
+                "message": "Go to Branch 5",
+                "address": "Branch5",
+                "stateChnange": "None" 
             }
         }
     },
-
-    "Riverstar:TownHall": 
+    "Branch2": 
     { 
-        "name": "Town Hall",
-        "message": "You have arrived at the Riverstar town hall.", 
+        "message": "You are in Branch 2", 
         "actions": 
         {
-            "GoToOfficeOfLicensing": 
+            "GoToBranch3": 
             { 
-                "type": "Location", 
-                "name": "Office of Licensing",
-                "message": "Approaching the Office of Licensing...",
-                "address": "Riverstar:TownHall:OfficeOfLicensing" 
+                "type": "Action", 
+                "message": "Go to Branch 3",
+                "address": "Branch3",
+                "stateChnange": "None"
             },
-            "GoToOfficeOfTaxation": 
+            "GoToBranch4": 
             { 
-                "type": "Location", 
-                "name": "Office of Taxation",
-                "message": "Approaching the Office of Taxation...",
-                "address": "Riverstar:TownHall:OfficeOfTaxation" 
+                "type": "Action", 
+                "message": "Go to Branch 4",
+                "address": "Branch4",
+                "stateChnange": "None"
             },
-            "GoToOfficeOfPolicy": 
+            "GoToBranch5": 
             { 
-                "type": "Location", 
-                "name": "Office of Policy",
-                "message": "Approaching the Office of Policy...",
-                "address": "Riverstar:TownHall:OfficeOfPolicy" 
-            },
-            "Leave": 
-            { 
-                "type": "Location", 
-                "name": "Leave",
-                "message": "Leaving Riverstar town hall...",
-                "address": "Riverstar"
+                "type": "Action", 
+                "message": "Go to Branch 5",
+                "address": "Branch5",
+                "stateChnange": "None" 
             }
         }
     },
-
-    "Riverstar:TownHall:OfficeOfLicensing": 
+    "Branch3": 
     { 
-        "name": "Office of Licensing", 
-        "message": "Opening the door, you walk through into the Office of Licensing.",
+        "message": "You are in Branch 3", 
         "actions": 
         {
-            "TalkToClerk": 
+            "GoToBranch4": 
             { 
-                "type": "Dialogue", 
-                "name": "Talk to the clerk",
-                "message": "You approach the counter and motion for help from the clerk.",
-                "address": "Riverstar:TownHall:OfficeOfLicensing:TalkToClerk"
+                "type": "Action", 
+                "message": "Go to Branch 4",
+                "address": "Branch4",
+                "stateChnange": "None"
             },
-            "Leave": 
+            "GoToBranch5": 
             { 
-                "type": "Location", 
-                "name": "Leave",
-                "message": "Leaving the Office of Licensing...",
-                "address": "Riverstar:TownHall"
+                "type": "Action", 
+                "message": "Go to Branch 5",
+                "address": "Branch5",
+                "stateChnange": "None" 
             }
         }
     },
-
-    "Riverstar:TownHall:OfficeOfTaxation": 
+    "Branch4": 
     { 
-        "name": "Office of Taxation",
-        "message": "Opening the door, you walk through into the Office of Taxation.",
-        "actions": "None" 
-    },
-
-    "Riverstar:TownHall:OfficeOfPolicy": 
-    { 
-        "name": "Office of Policy",
-        "message": "Opening the door, you walk through into the Office of Policy.",
-        "actions": "None" 
-    },
-
-    "Riverstar:JobBoard": 
-    { 
-        "name": "Job Board", 
-        "message": "You have arrived at the Riverstar job board.",
-        "actions": "None" 
-    },
-
-    "Riverstar:Tavern": 
-    { 
-        "name": "Twotails Tavern",
-        "message": "You have arrived at Twotails Tavern.",
-        "actions": "None" 
-    },
-
-    "Riverstar:GeneralStore": 
-    { 
-        "name": "Baldric's Goods", 
-        "message": "You have arrived at Baldric's Goods.",
-        "actions": "None"
-    },
-
-    "Riverstar:Blacksmith": 
-    { 
-        "name": "Firehilt Furnace",
-        "message": "You have arrived at Firehilt Furnace.",
-        "actions": "None" 
-    },
-
-    "Riverstar:Travel": 
-    { 
-        "name": "Travel",
-        "message": "You open up your map, searching for your next destination.",
+        "message": "You are in Branch 4", 
         "actions": 
         {
-            "GoToHallowedHill": 
+            "GoToBranch5": 
             { 
-                "type": "Location",
-                "name": "Hallowed Hill",
-                "message": "Travelling to Hallowed Hill...",
-                "address": "HallowedHill" 
+                "type": "Action", 
+                "message": "Go to Branch 5",
+                "address": "Branch5",
+                "stateChnange": "None" 
             }
         }
     },
-
-    "HallowedHill": 
+    "Branch5": 
     { 
-        "name": "Hallowed Hill",
-        "message": "You have arrived at Hallowed Hill.",
-        "actions": 
-        {
-            "GoToTheOverlook": 
-            { 
-                "type": "Location", 
-                "name": "The Overlook", 
-                "message": "None",
-                "address": "HallowedHill:TheOverlook" 
-            },
-            "GoToRiverstarCemetary": 
-            { 
-                "type": "Location", 
-                "name": "Riverstar Cemetary",
-                "message": "None",
-                "address": "HallowedHill:RiverstarCemetary" 
-            },
-            "GoToTravel": 
-            { 
-                "type": "Location", 
-                "name": "Travel",
-                "message": "None",
-                "address": "HallowedHill:Travel" 
-            }
-        }
-    },
-
-    "HallowedHill:TheOverlook": 
-    { 
-        "name": "The Overlook",
-        "message": "You have approached The Overlook.",
-        "actions": "None"
-    },
-
-    "HallowedHill:RiverstarCemetary": 
-    { 
-        "name": "Riverstar Cemetary",
-        "message": "You have approached Riverstar Cemetary.",
-        "actions": "None" 
-    },
-
-    "HallowedHill:Travel": 
-    { 
-        "name": "Travel",
-        "message": "You open up your map, searching for your next destination.",
-        "actions": 
-        {
-            "GoToRiverstar": 
-            { 
-                "type": "Location", 
-                "name": "Riverstar", 
-                "message": "None",
-                "address": "Riverstar" 
-            }
-        }
+        "message": "You are in Branch 5", 
+        "actions": { }
     }
 }

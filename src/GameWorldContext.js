@@ -16,12 +16,12 @@ export const GameWorldContext = React.createContext({
 
     // Location
     gameWorldLocations: locations,
-    location: locations["Riverstar"],
+    location: locations["Branch1"],
     changeLocation: () => {},
 
     // Activity
-    activityFeed: [locations["Riverstar"]["message"]],
-    message: locations["Riverstar"]["message"],
+    activityFeed: [locations["Branch1"]["message"]],
+    message: locations["Branch1"]["message"],
     updateMessage: () => {},
     manageDisplay: () => {},
 });
