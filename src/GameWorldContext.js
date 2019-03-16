@@ -1,5 +1,5 @@
 import React from 'react';
-import locations from './locations.json';
+import locations from './data/locations.json';
 
 export const GameWorldContext = React.createContext({
     // Screen
