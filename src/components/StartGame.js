@@ -18,7 +18,7 @@ class StartGame extends Component {
         if(playerName !== "" &&
             playerClass !== "" &&
             playerProficiency !== "") {
-                changeScreen("Activity");
+                changeScreen("Story");
             }
     }
     render() {

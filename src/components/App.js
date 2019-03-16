@@ -27,12 +27,19 @@ class App extends Component {
       return(<TitleMenu />);
     } else if(this.state.screen === "CharacterCreation") {
       return(<CharacterCreation />);
-    } else if(this.state.screen === "Activity") {
+    } else if(this.state.screen === "Story") {
       return(
         <>
             <Navigation />
             <ActivityFeed/>
             <ActionBar />
+        </>
+      );
+    } else if(this.state.screen === "Character") {
+      return(
+        <>
+            <Navigation />
+            <CharacterSheet/>
         </>
       );
     }
