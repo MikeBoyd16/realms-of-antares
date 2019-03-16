@@ -64,15 +64,15 @@ class App extends Component {
   /*
    * ACTIVITY
    */
-  updateMessage = (message) => {
-    this.setState({ message });
+  updateGameMessage = (gameMessage) => {
+    this.setState({ gameMessage });
   }
   updateActionMessage = (actionMessage) => {
     this.setState({ actionMessage });
   }
-  manageDisplay = (location, actionMessage) => {
+  manageDisplay = (location, gameMessage) => {
     this.changeLocation(location);
-    this.updateMessage(actionMessage);
+    this.updateGameMessage(gameMessage);
   }
 
   state = {
@@ -95,9 +95,9 @@ class App extends Component {
 
     // Activity
     activityFeed: [locations["Branch1"]["message"]],
-    message: locations["Branch1"]["message"],
+    gameMessage: locations["Branch1"]["message"],
     actionMessage: " ",
-    updateMessage: this.updateMessage,
+    updateGameMessage: this.updateMessage,
     updateActionMessage: this.updateActionMessage,
     manageDisplay: this.manageDisplay,
   };

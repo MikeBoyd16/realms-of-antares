@@ -13,24 +13,24 @@ class ActionBar extends Component {
         return(
             <div id="actionBar">
                 <GameWorldContext.Consumer>
-                    {({ location, actionMessage }) => (
-                        <>
-                        <ActionMessage message={actionMessage} />
-                        <div id="actions">
-                        {
-                            Object.entries(
-                                location["actions"]).map(([key, value]) => 
-                                <ActionButton 
-                                    key={key} 
-                                    actionAddress={value["address"]} 
-                                    actionMessage={value["message"]} 
-                                    classes="button btnLightBlue"
-                                />
-                            )
-                        }
-                        </div>
-                        </>
-                    )}
+                {({ location, actionMessage }) => (
+                    <>
+                    <ActionMessage message={actionMessage} />
+                    <div id="actions">
+                    {
+                        Object.entries(
+                            location["actions"]).map(([key, value]) => 
+                            <ActionButton 
+                                key={key} 
+                                actionAddress={value["address"]} 
+                                actionMessage={value["message"]} 
+                                classes="button btnLightBlue"
+                            />
+                        )
+                    }
+                    </div>
+                    </>
+                )}
                 </GameWorldContext.Consumer>
             </div>
         );
