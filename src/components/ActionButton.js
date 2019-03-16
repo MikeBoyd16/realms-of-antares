@@ -3,28 +3,17 @@ import '../css/ActionButton.css';
 import { GameWorldContext } from '../context/GameWorldContext';
 
 class ActionButton extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            actionName: this.props.actionName,
-            actionMessage: this.props.actionMessage,
-            actionAddress: this.props.actionAddress,
-            classes: this.props.classes
-        }
-        this.createButton = this.createButton.bind(this);
-    }
-    createButton(gameWorldLocations, manageDisplay) {
-        return(
-            <button className={this.state.classes} onClick={() => manageDisplay(gameWorldLocations[this.state.actionAddress], 
-                this.state.actionMessage)}></button>
-        );
-    }
     render() {
         return(
             <GameWorldContext.Consumer>
-                {({ gameWorldLocations, manageDisplay }) => (
+                {({ gameWorldLocations, updateActionMessage, manageDisplay }) => (
                     <div>
-                        {this.createButton(gameWorldLocations, manageDisplay)}
+                        <button 
+                            className={this.props.classes} 
+                            onMouseOver={() => updateActionMessage(this.props.actionMessage)} 
+                            onMouseOut={() => updateActionMessage(" ")} 
+                            onClick={() => manageDisplay(gameWorldLocations[this.props.actionAddress], this.props.actionMessage)}>
+                        </button>
                     </div>
                 )}
             </GameWorldContext.Consumer>

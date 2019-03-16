@@ -67,6 +67,9 @@ class App extends Component {
   updateMessage = (message) => {
     this.setState({ message });
   }
+  updateActionMessage = (actionMessage) => {
+    this.setState({ actionMessage });
+  }
   manageDisplay = (location, actionMessage) => {
     this.changeLocation(location);
     this.updateMessage(actionMessage);
@@ -93,7 +96,9 @@ class App extends Component {
     // Activity
     activityFeed: [locations["Branch1"]["message"]],
     message: locations["Branch1"]["message"],
+    actionMessage: " ",
     updateMessage: this.updateMessage,
+    updateActionMessage: this.updateActionMessage,
     manageDisplay: this.manageDisplay,
   };
   
