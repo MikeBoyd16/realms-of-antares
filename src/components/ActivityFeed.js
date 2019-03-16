@@ -2,7 +2,6 @@ import React from "react";
 import { GameWorldContext } from '../context/GameWorldContext';
 
 // Styles
-import '../appStyles.css';
 import '../css/ActivityFeed.css';
 
 class ActivityFeed extends React.Component {

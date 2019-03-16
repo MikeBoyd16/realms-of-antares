@@ -13,7 +13,7 @@ import ActivityFeed from './ActivityFeed';
 import ActionBar from './ActionBar';
 
 // Styles
-import '../appStyles.css';
+import '../css/App.css';
 
 class App extends Component {
   /* 
