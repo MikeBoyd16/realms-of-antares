@@ -1,2 +1,2 @@
 # realms-of-antares
-A text-based role-playing game
+A text-based choose your own adventure game
