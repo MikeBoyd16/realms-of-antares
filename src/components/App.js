@@ -11,7 +11,6 @@ import Navigation from './Navigation';
 import CharacterStatus from './CharacterStatus';
 import ActivityFeed from './ActivityFeed';
 import ActionBar from './ActionBar';
-import DialogueBar from './DialogueBar';
 
 // Styles
 import '../appStyles.css';
