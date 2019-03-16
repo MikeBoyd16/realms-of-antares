@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import {GameWorldContext} from '../context/GameWorldContext';
 
 // Data
-import locations from '../data/locations.json';
+import locations from '../data/location.json';
 
 // Components
 import TitleMenu from './TitleMenu';
