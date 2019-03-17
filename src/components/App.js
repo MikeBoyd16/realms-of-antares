@@ -3,6 +3,7 @@ import {GameWorldContext} from '../context/GameWorldContext';
 
 // Data
 import locations from '../data/location.json';
+import character from '../data/character.json';
 
 // Components
 import TitleMenu from './TitleMenu';
@@ -101,6 +102,9 @@ class App extends Component {
     actionMessage: " ",
     updateActionMessage: this.updateActionMessage,
     manageDisplay: this.manageDisplay,
+
+    // Player
+    player: character,
   };
   
   render() {

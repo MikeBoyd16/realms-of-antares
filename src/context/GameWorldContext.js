@@ -1,5 +1,6 @@
 import React from 'react';
 import locations from '../data/location.json';
+import character from '../data/character.json';
 
 export const GameWorldContext = React.createContext({
     // Screen
@@ -24,4 +25,7 @@ export const GameWorldContext = React.createContext({
     actionMessage: " ",
     updateActionMessage: () => {},
     manageDisplay: () => {},
+
+    // Player
+    player: character,
 });

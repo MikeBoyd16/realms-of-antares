@@ -18,8 +18,7 @@ class ActionBar extends Component {
                     <ActionMessage actionMessage={actionMessage} />
                     <div id="actions">
                     {
-                        Object.entries(
-                            location["actions"]).map(([key, value]) => 
+                        Object.entries(location["actions"]).map(([key, value]) => 
                             <ActionButton 
                                 key={key} 
                                 actionAddress={value["address"]} 

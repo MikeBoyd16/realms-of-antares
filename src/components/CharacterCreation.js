@@ -51,12 +51,12 @@ class CharacterCreation extends Component {
         return(
             <GameWorldContext.Consumer>
             {({ playerName, playerClass, playerProficiency }) => (
-                <div id="characterCreation">
-                    <NameSelect/>
-                    {this.createButtons("playerClass")}
-                    {this.createButtons("playerProficiency")}
-                    {this.createStartGame(playerName, playerClass, playerProficiency)}
-                </div>
+            <div id="characterCreation">
+                <NameSelect/>
+                {this.createButtons("playerClass")}
+                {this.createButtons("playerProficiency")}
+                {this.createStartGame(playerName, playerClass, playerProficiency)}
+            </div>
             )}
             </GameWorldContext.Consumer>
         );
