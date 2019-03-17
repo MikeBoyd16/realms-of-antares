@@ -14,20 +14,20 @@ class StartGame extends Component {
             return false;
         }
     }
-    handleClick(changeScreen, playerName, playerClass, playerProficiency) {
+    handleClick(startGame, playerName, playerClass, playerProficiency) {
         if(playerName !== "" &&
             playerClass !== "" &&
             playerProficiency !== "") {
-                changeScreen("Story");
+                startGame();
             }
     }
     render() {
         return(
             <GameWorldContext.Consumer>
-            {({ changeScreen, playerName, playerClass, playerProficiency }) => (
+            {({ startGame, playerName, playerClass, playerProficiency }) => (
                 <div id="startGame" className={this.props.visible}>
                     <button className={this.props.visible} 
-                    onClick={() => this.handleClick(changeScreen, playerName, playerClass, playerProficiency)}
+                    onClick={() => this.handleClick(startGame, playerName, playerClass, playerProficiency)}
                     disabled={this.handleDisabled()}>
                         Start Game
                     </button>

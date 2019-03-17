@@ -1,4 +1,5 @@
 import React from 'react';
+import game from '../data/game.json';
 import locations from '../data/location.json';
 import character from '../data/character.json';
 
@@ -14,6 +15,7 @@ export const GameWorldContext = React.createContext({
     playerProficiency: " ",
     setPlayerName: () => {},
     setAttributeSelection: () => {},
+    startGame: () => {},
 
     // Location
     gameWorldLocations: locations,
@@ -27,5 +29,6 @@ export const GameWorldContext = React.createContext({
     manageDisplay: () => {},
 
     // Player
+    game: game,
     player: character,
 });

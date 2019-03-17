@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import {GameWorldContext} from '../context/GameWorldContext';
 
 // Data
+import game from '../data/game.json';
 import locations from '../data/location.json';
 import character from '../data/character.json';
 
@@ -61,6 +62,16 @@ class App extends Component {
       console.log("Error: Unable to set player attribute during character creation.");
     }
   }
+  startGame = () => {
+    var player = this.state.player;
+    player["Name"] = this.state.playerName;
+    player["Class"] = this.state.playerClass;
+    player["Attributes"] = game["Class Presets"]["Attributes"][this.state.playerClass];
+    player["Skills"] = game["Class Presets"]["Skills"][this.state.playerClass];
+    player["Skills"][this.state.playerProficiency] = String(parseInt(player["Skills"][this.state.playerProficiency]) + 1);
+    this.setState({ player });
+    this.changeScreen("Story");
+  }
 
   /*
    * LOCATION
@@ -70,7 +81,7 @@ class App extends Component {
   }
 
   /*
-   * ACTIVITY
+   * Story
    */
   updateActionMessage = (actionMessage) => {
     this.setState({ actionMessage });
@@ -91,19 +102,21 @@ class App extends Component {
     playerProficiency: "",
     setPlayerName: this.setPlayerName,
     setAttributeSelection: this.setAttributeSelection,
+    startGame: this.startGame,
 
     // Location
     gameWorldLocations: locations,
     location: locations["Branch1"],
     changeLocation: this.changeLocation,
 
-    // Activity
+    // Story
     activityFeed: locations["Branch1"]["message"],
     actionMessage: " ",
     updateActionMessage: this.updateActionMessage,
     manageDisplay: this.manageDisplay,
 
     // Player
+    game: game,
     player: character,
   };
   

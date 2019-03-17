@@ -25,12 +25,10 @@
         "Navigation": "1",
         "Hacking": "1",
         "Engineering": "1",
-        "Barter": "1",
         "Speechcraft": "1",
         "Athletics": "1",
         "Acrobatics": "1",
-        "History": "1",
-        "Government": "1"
+        "History": "1"
     },
     "Currencies": {
         "CREDITS": 0
