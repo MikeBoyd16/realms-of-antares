@@ -16,6 +16,7 @@ class TitleMenu extends Component {
                 <div id="actionPanel">
                     <button onClick={() => changeScreen("CharacterCreation")}>New Game</button>
                     <button>Import Save</button>
+                    <button>Settings</button>
                 </div>
             </div>
             )}
