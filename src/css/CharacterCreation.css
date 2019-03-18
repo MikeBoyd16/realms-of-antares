@@ -4,12 +4,14 @@
  */
 #characterCreation 
 {
-    height: 100%;
-    width: 100%;
+    height: 100vh;
+    width: 100vw;
     font-family: 'Orbitron', 'Open Sans', serif;
     font-size: 14px;
     font-weight: normal;
     letter-spacing: 0.30em;
+    background-color: rgb(31, 30, 30);
+    box-shadow: inset 0 0 3.8em rgba(255,255,255,0.3), 0 0 3.8em rgba(255,255,255,0.3);
 }
 #playerName, #playerClass, #playerProficiency
 {
@@ -18,11 +20,11 @@
     margin: 110px 50px 50px 50px;
     display: inline-block; 
     vertical-align: top;
-    color: rgb(31, 30, 30);
-    border: rgb(31, 30, 30) solid 2px;
+    color: rgb(255, 255, 255);
+    border: rgb(255, 255, 255) solid 2px;
     box-shadow: inset 0 0 0.8em rgba(255,255,255,0.3), 0 0 0.8em rgba(255,255,255,0.3);
     transition: all 1s;
-    opacity:0;
+    opacity: 0;
     animation:fadeIn ease-in 1; -webkit-animation:fadeIn ease-in 1; -moz-animation:fadeIn ease-in 1;
     animation-fill-mode:forwards; -webkit-animation-fill-mode:forwards; -moz-animation-fill-mode:forwards;
     animation-duration:1s; -webkit-animation-duration:1s; -moz-animation-duration:1s;
@@ -30,7 +32,8 @@
 #playerName:hover, #playerClass:hover, #playerProficiency:hover 
 {
     color: rgb(31, 30, 30);
-    box-shadow: inset 0 0 0 rgba(31,30,30,0.5), 0 0 1.5em rgba(31,30,30,0.7);
+    background-color: rgb(255, 255, 255);
+    box-shadow: inset 0 0 0.8em rgba(255,255,255,0.3), 0 0 0.8em rgba(255,255,255,0.3);
     border: black solid 2px;
     transition: 1.0s;
 }
@@ -41,8 +44,9 @@
 }
 #characterCreation > * > input, #characterCreation > * > * > button
 {
-    color: rgb(31,30,30);
-    border: black solid 2px;
+    color: rgb(255, 255, 255);
+    border: rgb(255, 255, 255) solid 2px;
+    box-shadow: inset 0 0 0.8em rgba(255,255,255,0.3), 0 0 0.8em rgba(255,255,255,0.3);
     transition: 0.5s;
 }
 #characterCreation > * > input
@@ -50,17 +54,16 @@
     height: 30px;
     width: 150px;
     margin: 0 auto;
-    color: rgb(31, 30, 30);
     text-align: center;
     font-family: 'Orbitron', 'Open Sans', serif;
 }
 #characterCreation > * > * > button 
 {
     cursor: pointer;
+    color: rgb(255, 255, 255);
 }
 #characterCreation > * > input:hover, #characterCreation > * > * > button:hover 
 {
-    color: white;
     box-shadow: inset 0 0 0 rgba(31,30,30,0.5), 0 0 1.5em rgba(31,30,30,0.7);
     border: black solid 2px;
     transition: 0.5s;
@@ -150,10 +153,10 @@
     height: 55px;
     width: 190px;
     opacity: 0;
-    color: white;
-    background-color: rgb(31, 30, 30);
-    box-shadow: inset 0 0 0 rgba(31,30,30,0.5), 0 0 1.5em rgba(31,30,30,0.7);
-    border: black solid 2px;
+    color: rgb(31, 30, 30);
+    background-color: rgb(255, 255, 255);
+    border: rgb(255, 255, 255) solid 2px;
+    box-shadow: inset 0 0 0.8em rgba(255,255,255,0.3), 0 0 0.8em rgba(255,255,255,0.3);
     transition: .2s;
     cursor: pointer;
     animation-delay: 1s; -webkit-animation-delay: 1s; -moz-animation-delay: 1s;

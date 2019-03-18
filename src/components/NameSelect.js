@@ -6,8 +6,7 @@ class NameSelect extends Component {
         super(props);
         this.state = {
             inputStyle : {
-                backgroundColor: "rgb(255, 255, 255)" ,
-                color: "rgb(31, 30, 30)"
+                backgroundColor: "rgb(31, 30, 30)"
             }
         }
         this.onNameChange = this.onNameChange.bind(this);
@@ -16,16 +15,14 @@ class NameSelect extends Component {
         if(event.target.value !== ""){
             this.setState({ 
                 inputStyle: { 
-                    backgroundColor: "rgb(31, 30, 30)",
-                    color: "rgb(255, 255, 255)"
+                    backgroundColor: "rgb(71, 70, 70)"
                 }
             });
             setPlayerName(event.target.value);
         } else{
             this.setState({ 
                 inputStyle: { 
-                    backgroundColor: "rgb(255, 255, 255)",
-                    color: "rgb(31, 30, 30)"
+                    backgroundColor: "rgb(31, 30, 30)"
                 }
             });
         }

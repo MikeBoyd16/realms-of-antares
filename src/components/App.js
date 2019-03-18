@@ -31,18 +31,18 @@ class App extends Component {
       return(<CharacterCreation />);
     } else if(this.state.screen === "Story") {
       return(
-        <>
-            <Navigation />
-            <ActivityFeed/>
-            <ActionBar />
-        </>
+        <div id="gameSpace">
+          <Navigation />
+          <ActivityFeed/>
+          <ActionBar />
+        </div>
       );
     } else if(this.state.screen === "Character") {
       return(
-        <>
-            <Navigation />
-            <CharacterSheet/>
-        </>
+        <div id="gameSpace">
+          <Navigation />
+          <CharacterSheet/>
+        </div>
       );
     }
   }
