@@ -41,6 +41,13 @@
         "message": "You are in Branch 2", 
         "actions": 
         {
+            "GoToBranch1": 
+            { 
+                "type": "Action", 
+                "message": "Go to Branch 1",
+                "address": "Branch1",
+                "stateChange": "None"
+            },
             "GoToBranch3": 
             { 
                 "type": "Action", 
@@ -70,6 +77,20 @@
         "message": "You are in Branch 3", 
         "actions": 
         {
+            "GoToBranch1": 
+            { 
+                "type": "Action", 
+                "message": "Go to Branch 1",
+                "address": "Branch1",
+                "stateChange": "None"
+            },
+            "GoToBranch2": 
+            { 
+                "type": "Action", 
+                "message": "Go to Branch 2",
+                "address": "Branch2",
+                "stateChange": "None"
+            },
             "GoToBranch4": 
             { 
                 "type": "Action", 
@@ -92,6 +113,27 @@
         "message": "You are in Branch 4", 
         "actions": 
         {
+            "GoToBranch1": 
+            { 
+                "type": "Action", 
+                "message": "Go to Branch 1",
+                "address": "Branch1",
+                "stateChange": "None"
+            },
+            "GoToBranch2": 
+            { 
+                "type": "Action", 
+                "message": "Go to Branch 2",
+                "address": "Branch2",
+                "stateChange": "None"
+            },
+            "GoToBranch3": 
+            { 
+                "type": "Action", 
+                "message": "Go to Branch 3",
+                "address": "Branch3",
+                "stateChange": "None"
+            },
             "GoToBranch5": 
             { 
                 "type": "Action", 
@@ -105,6 +147,35 @@
     { 
         "name": "Branch5", 
         "message": "You are in Branch 5", 
-        "actions": { }
+        "actions": {
+            "GoToBranch1": 
+            { 
+                "type": "Action", 
+                "message": "Go to Branch 1",
+                "address": "Branch1",
+                "stateChange": "None"
+            },
+            "GoToBranch2": 
+            { 
+                "type": "Action", 
+                "message": "Go to Branch 2",
+                "address": "Branch2",
+                "stateChange": "None"
+            },
+            "GoToBranch3": 
+            { 
+                "type": "Action", 
+                "message": "Go to Branch 3",
+                "address": "Branch3",
+                "stateChange": "None"
+            },
+            "GoToBranch4": 
+            { 
+                "type": "Action", 
+                "message": "Go to Branch 4",
+                "address": "Branch4",
+                "stateChange": "None"
+            }
+         }
     }
 }
