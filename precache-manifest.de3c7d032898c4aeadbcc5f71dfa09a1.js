@@ -8,19 +8,19 @@ self.__precacheManifest = [
     "url": "/realms-of-antares/static/js/runtime~main.f24e1ab3.js"
   },
   {
-    "revision": "d346d4e4a78f9391d351",
-    "url": "/realms-of-antares/static/js/main.d346d4e4.chunk.js"
+    "revision": "8449b13ea61b5de81d96",
+    "url": "/realms-of-antares/static/js/main.8449b13e.chunk.js"
   },
   {
     "revision": "5f96072cf97ce79d9558",
     "url": "/realms-of-antares/static/js/1.5f96072c.chunk.js"
   },
   {
-    "revision": "d346d4e4a78f9391d351",
-    "url": "/realms-of-antares/static/css/main.cd3671df.chunk.css"
+    "revision": "8449b13ea61b5de81d96",
+    "url": "/realms-of-antares/static/css/main.08c49cab.chunk.css"
   },
   {
-    "revision": "be56468e4e5c684b70646c96b182934d",
+    "revision": "41cd5327fdbe7045b835b2c868bc4cc9",
     "url": "/realms-of-antares/index.html"
   }
 ];
