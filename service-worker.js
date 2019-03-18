@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/realms-of-antares/precache-manifest.9a1c0881409c004f9250f83758d6468e.js"
+  "/realms-of-antares/precache-manifest.de3c7d032898c4aeadbcc5f71dfa09a1.js"
 );
 
 workbox.clientsClaim();
