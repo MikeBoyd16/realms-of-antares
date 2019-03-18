@@ -1,2 +1,4 @@
 # realms-of-antares
-A text-based choose your own adventure game
+Author: Michael Boyd
+Description: A sci-fi themed choose-your-own-adventure game
+App: https://mikeboyd16.github.io/realms-of-antares/
