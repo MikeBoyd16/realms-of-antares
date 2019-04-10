@@ -1,4 +1,3 @@
-# Realms of Antares
-Author: Michael Boyd<br/>
-Description: A sci-fi themed choose-your-own-adventure game<br/>
-Live version: https://mikeboyd16.github.io/realms-of-antares/
+<p align="center"><img src="/src/images/readme-icon.png" align="middle" width="200px" /></p>
+<h1 align="center">Realms of Antares</h1>
+<h3 align="center"><a href="https://mikeboyd16.github.io/realms-of-antares/">Demo</href></h3>
