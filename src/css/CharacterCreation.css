@@ -7,7 +7,7 @@
     height: 100vh;
     width: 100vw;
     font-family: 'Orbitron', 'Open Sans', serif;
-    font-size: 14px;
+    font-size: 2vh;
     font-weight: normal;
     letter-spacing: 0.30em;
     background-color: rgb(31, 30, 30);
@@ -15,9 +15,9 @@
 }
 #playerName, #playerClass, #playerProficiency
 {
-    height: 500px;
-    width: 300px;
-    margin: 110px 50px 50px 50px;
+    height: 68vh;
+    width: 20vw;
+    margin: 15vh 3vw 3vw 3vw;
     display: inline-block; 
     vertical-align: top;
     color: rgb(255, 255, 255);
