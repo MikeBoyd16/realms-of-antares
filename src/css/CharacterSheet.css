@@ -4,13 +4,13 @@
     width: 85vw;
     margin: 0 auto;
     letter-spacing: 0.07em;
-    font-size: 15px;
+    font-size: 2vh;
 
 }
 #statusPanel, #attributePanel, #skillPanel
 {
     margin: 0 auto;
-    height: 65vh;
+    height: 60vh;
     width: 15vw;
     margin: 1vw;
     color: rgb(255, 255, 255);

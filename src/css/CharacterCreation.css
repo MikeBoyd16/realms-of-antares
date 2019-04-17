@@ -15,7 +15,7 @@
 }
 #playerName, #playerClass, #playerProficiency
 {
-    height: 68vh;
+    height: 66vh;
     width: 20vw;
     margin: 15vh 3vw 3vw 3vw;
     display: inline-block; 
@@ -40,7 +40,7 @@
 #characterCreation > * > label 
 {
     display: block;
-    font-size: 28px;
+    font-size: 3.5vh;
 }
 #characterCreation > * > input, #characterCreation > * > * > button
 {
@@ -51,8 +51,9 @@
 }
 #characterCreation > * > input
 {
-    height: 30px;
-    width: 150px;
+    height: 4vh;
+    width: 10vw;
+    font-size: 1.8vh;
     margin: 0 auto;
     text-align: center;
     font-family: 'Orbitron', 'Open Sans', serif;
@@ -77,7 +78,7 @@
 }
 #playerName > label 
 {
-    margin: 50px 0 150px 0;
+    margin: 6vh 0 18vh 0;
 }
 #nameInput
 {
@@ -93,13 +94,14 @@
 }
 #playerClass > label 
 {
-    margin: 50px 0 10px 0;
+    margin: 6vh 0 1vh 0;
 }
 #playerClass > * > button 
 {
-    height: 55px;
-    width: 205px;
-    margin: 25px 10px 10px 10px;
+    height: 8vh;
+    width: 13vw;
+    margin: 3vh 1vw 1.5vh 1vw;
+    font-size: 1.8vh;
 }
 /*
  * PLAYER PROFICIENCY
@@ -110,13 +112,14 @@
 }
 #playerProficiency > label 
 {
-    margin: 50px 0 25px 0;
+    margin: 6vh 0 1vh 0;
 }
 #playerProficiency > * > button
 {
-    height: 45px;
-    width: 205px;
-    margin: 10px 10px 5px 10px;
+    height: 6vh;
+    width: 13vw;
+    margin: 3vh 1vw -1.1vh 1vw;
+    font-size: 1.8vh;
 }
 /*
  * START GAME
@@ -150,9 +153,10 @@
 }
 .visible 
 {
-    height: 55px;
-    width: 190px;
+    height: 7.5vh;
+    width: 13vw;
     opacity: 0;
+    font-size: 1.8vh;
     color: rgb(31, 30, 30);
     background-color: rgb(255, 255, 255);
     border: rgb(255, 255, 255) solid 2px;
@@ -166,7 +170,7 @@
 }
 .visible:hover 
 {
-    height: 65px;
-    width: 205px;
+    height: 9vh;
+    width: 14vw;
     transition: .2s;
 }

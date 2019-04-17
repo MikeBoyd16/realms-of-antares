@@ -3,7 +3,7 @@
     height: 100vh;
     width: 100vw;
     background-color: rgb(31, 30, 30);
-    box-shadow: inset 0 0 3.8em rgba(255,255,255,0.3), 0 0 3.8em rgba(255,255,255,0.3);
+    box-shadow: inset 0 0 3em rgba(255,255,255,0.3), 0 0 3em rgba(255,255,255,0.3);
     overflow: hidden;
 }
 #activityFeed 
@@ -23,7 +23,7 @@
 {
     margin-top: 15vh;
     text-align: left;
-    font-size: 26px;
+    font-size: 3vh;
     display: inline-block;
 }
 #character
