@@ -3,10 +3,10 @@
 <p align="center">A sci-fi themed choose-your-own-adventure game</p>
 <h2>Availability</h2>
 <a href="https://mikeboyd16.github.io/realms-of-antares/">Live demo</a>
-<h2>Upcoming Features</h2>
+<h2>Planned Features</h2>
 <ul>
   <li>Story content</li>
-  <li>Visual improvements</li>
+  <li>Seamless transitioning</li>
   <li>Better UI scaling for larger viewports</li>
   <li>Mobile support</li>
 </ul>
