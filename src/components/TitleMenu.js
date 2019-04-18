@@ -11,7 +11,7 @@ class TitleMenu extends Component {
             {({ changeScreen }) => (
             <div id="titleMenu">
                 <div id="titlePanel">
-                    <img src={require("../images/title.png")} />
+                    <img src={require("../images/title.PNG")} />
                 </div>
                 <div id="actionPanel">
                     <button onClick={() => changeScreen("CharacterCreation")}>New Game</button>

@@ -98,9 +98,9 @@
 }
 #playerClass > * > button 
 {
-    height: 8vh;
+    height: 8.5vh;
     width: 13vw;
-    margin: 3vh 1vw 1.5vh 1vw;
+    margin: 3vh 1vw .4vh 1vw;
     font-size: 1.8vh;
 }
 /*
@@ -118,7 +118,7 @@
 {
     height: 6vh;
     width: 13vw;
-    margin: 3vh 1vw -1.1vh 1vw;
+    margin: 3vh 1vw -1.4vh 1vw;
     font-size: 1.8vh;
 }
 /*
